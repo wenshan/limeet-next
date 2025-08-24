@@ -1,5 +1,4 @@
 'use client';
-import type { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from "react-query";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -39,6 +38,7 @@ export default function RootLayout({
       <body className="root">
         <QueryClientProvider client={queryClient}>
           {/* 这里放置全局布局内容，如导航栏、页脚等 */}
+          <Header></Header>
           {children}
           <Footer></Footer>
           <ICP></ICP>

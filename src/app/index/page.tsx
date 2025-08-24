@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import Header from '@/components/Header';
 import { Dropdown, Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 import BannerSwiper from '@/components/BannerSwiper';
 import Categories from '@/components/Categories';
@@ -14,7 +13,6 @@ function HomePage() {
   const { t } = useTranslation();
   return (
     <>
-      <Header from="index"></Header>
       <BannerSwiper></BannerSwiper>
       <Categories></Categories>
       <Container fluid className='list-wrap'>

@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '@/components/Header';
 import { Dropdown, Navbar, Container, Nav, NavDropdown, Row, Col, Button } from 'react-bootstrap';
 
 export default function IndexPage() {
@@ -11,7 +10,6 @@ export default function IndexPage() {
   };
   return (
     <>
-      <Header from="404"></Header>
       <Container fluid>
         <div>
           <div

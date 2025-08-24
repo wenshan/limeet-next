@@ -5,13 +5,11 @@ import { getBanner, queryProductList, queryProductCategories, productDetail, que
 import { useTranslation } from 'react-i18next';
 import CategoriesSide from '@/components/CategoriesSide';
 import List from '@/components/List';
-import Header from '@/components/Header';
 
 import './index.less';
 
 function ProductList(props) {
   return (<>
-    <Header from="product"></Header>
     <Container fluid className='list-wrap'>
       <Row>
         <Col sm={4} md={3} lg={2}>

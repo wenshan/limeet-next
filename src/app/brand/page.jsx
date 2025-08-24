@@ -2,14 +2,12 @@
 import React, { Component } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import Header from '@/components/Header';
 import './index.less';
 
 function Brand() {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <Header from="brand"></Header>
       <Container fluid>
         <div className='brand-wrapper'>
           <h2>{t('common.nav.brand.story')}</h2>

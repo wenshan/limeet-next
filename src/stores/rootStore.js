@@ -12,7 +12,8 @@ import {
   queryProductList,
   queryProductCategories,
   productDetail,
-  queryProductGroup
+  queryProductGroup,
+  getBanner,
 } from '@/services/index';
 
 const lng = (new LanguageDetector()).detect() || 'en';
@@ -46,6 +47,11 @@ const paginationInit = {
   total: 0
 };
 
+const whereParamsBanner = {
+  channel: 'limeetpet',
+  type: 'home'
+};
+
 const lang = (languageI18next[lng] && languageI18next[lng].value) || 'en-US';
 const RootStore = create(persist((set, get)=>({
   projectId: 1747727677,
@@ -59,6 +65,7 @@ const RootStore = create(persist((set, get)=>({
   saleSkusList: [],
   currentSaleSku: {},
   menu: initMenu[lang],
+  swiperBanner: [],
   setUrLanguage: ()=>{
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const { i18n } = useTranslation();
@@ -137,6 +144,22 @@ const RootStore = create(persist((set, get)=>({
   },
   setMenu: (data)=>{
     set((state) =>({...state, menu: data}));
+  },
+  setSwiperBanner: (data)=>{
+    set((state) =>({...state, swiperBanner: data}));
+  },
+  getBannerFetch: async () => {
+    const { projectId, language} = get();
+    try {
+      const result = await getBanner({ projectId, ...whereParamsBanner, language });
+      if (result && result.status == 200 && result.data && result.data && result.data.rows) {
+        set((state) =>({...state, swiperBanner: result.data.rows}));
+      } else {
+        set((state) =>({...state, swiperBanner: []}));
+      }
+    } catch (err) {
+      console.log(err);
+    }
   }
 }
 )));

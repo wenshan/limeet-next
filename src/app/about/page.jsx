@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import { Row, Col, Container, Modal, Button, Image } from 'react-bootstrap';
-import Header from '@/components/Header';
 
 import './index.less';
 
@@ -14,7 +13,6 @@ function About() {
   const handleShow = () => setWechatStatus(true);
   return (
     <>
-      <Header from="about"></Header>
       <Container fluid>
         <div className="about-page clearfix">
           <div className="des-tx clearfix">

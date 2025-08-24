@@ -12,12 +12,10 @@ import initMenu from '../../constant/menuNav';
 
 import './index.less';
 
-function Header(props) {
+function Header() {
   const { t, i18n } = useTranslation();
-  const { language, setLanguage, menu,  setMenu} = RootStore();
+  const { language, setLanguage, menu,  setMenu, getCategoriesFetch, getProductListFetch, getBannerFetch} = RootStore();
   const router = useRouter();
-  const { from } = props;
-  console.log('from:', from);
   const gotoPage = (path, key, value, current) => {
     const objMenu = [];
     if (path && key && menu && menu[0]) {
@@ -126,6 +124,9 @@ function Header(props) {
     store.set('i18nextLng', lng);
     setMenu(initMenu[value]);
     setLanguage(value);
+    getCategoriesFetch();
+    getProductListFetch();
+    getBannerFetch();
   };
 
   return (
@@ -135,12 +136,12 @@ function Header(props) {
         <div className='header'>
           <div className='main'>
             <div className='logo'>
-              <a href='/'>
+              <Link href='/'>
                 <img src='https://img.limeetpet.com/limeet/limeet_logo.png' alt="Limeet Pet Brand" />
-              </a>
+              </Link>
             </div>
             <div className='des'>
-              <h1><a href='/'>LIMEET</a></h1>
+              <h1><Link href='/'>LIMEET</Link></h1>
               <h2>
                 {t('common.header.name.second')}
                 <img src='https://img.limeetpet.com/limeet/maogou.png' alt="Limeet" />

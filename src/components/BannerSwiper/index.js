@@ -7,27 +7,9 @@ import {
 
 import './index.less';
 
-const whereParams = {
-  channel: 'limeetpet',
-  type: 'home'
-};
 
 function Banner() {
-  const { projectId, language } = RootStore();
-  const [ swiperBanner, setSwiperBanner ] = useState([]);
-  const getBannerFetch = async () => {
-    try {
-      const result = await getBanner({ projectId, ...whereParams, language });
-      if (result && result.status == 200 && result.data && result.data && result.data.rows) {
-        setSwiperBanner(result.data.rows);
-      } else {
-        setSwiperBanner([]);
-      }
-    } catch (err) {
-      console.log(err);
-    }
-
-  };
+  const { swiperBanner, getBannerFetch } = RootStore();
   useEffect(() => {
     getBannerFetch();
   }, []);
