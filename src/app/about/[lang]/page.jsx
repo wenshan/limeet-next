@@ -13,7 +13,6 @@ import LocalStorageClient from '@/components/LocalStorageClient';
 import './index.less';
 
 async function About({ params }) {
-  console.log('About params:', params);
   const { lang, key } = await params;
   const normLang = normalizeLangCode(lang);
   await initI18nServer();
@@ -45,8 +44,9 @@ async function About({ params }) {
         if (item.key === currentPage) {
           html.push(
             <li key={item.name} title={item.name} id='basic-nav-dropdown' className='active'>
-              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name}</Link>
+              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i class="triangle"></i></Link>
               <div className='dropdown-wrap'>
+                <i className='triangle-top'></i>
                 {htmlDropdown}
               </div>
             </li>
@@ -54,8 +54,9 @@ async function About({ params }) {
         } else {
           html.push(
             <li key={item.name} title={item.name} id='basic-nav-dropdown'>
-              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name}</Link>
+              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i class="triangle"></i></Link>
               <div className='dropdown-wrap'>
+                <i className='triangle-top'></i>
                 {htmlDropdown}
               </div>
             </li>

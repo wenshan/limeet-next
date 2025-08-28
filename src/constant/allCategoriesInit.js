@@ -6,7 +6,7 @@ export default {
   },
   'ja-JP': {     
     key: 'all',
-    title: 'すべて'  
+    title: '全製品'  
   },
   'zh-CN': { 
     key: 'all',

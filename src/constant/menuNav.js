@@ -118,7 +118,7 @@ export default {
       current: 'product',
     },
     {
-      name: 'All Product',
+      name: '全製品',
       value: 'all',
       path: '/productList/',
       key: 'all',

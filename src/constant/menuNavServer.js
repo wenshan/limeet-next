@@ -136,7 +136,7 @@ export default {
         lang: 'ja-JP'
       },
       {
-        name: 'All Product',
+        name: '全製品',
         value: 'all',
         path: '/productList',
         key: 'all',

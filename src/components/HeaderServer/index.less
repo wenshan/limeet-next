@@ -180,6 +180,18 @@
         border-bottom: 2px solid #D8D8D8;
         cursor: pointer;
         position: relative;
+
+        i.triangle {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #666;
+          transition: all 0.3s ease;
+          display: inline-block;
+          overflow: hidden;
+          margin-bottom: 5px;
+        }
       }
 
       li.action {
@@ -213,6 +225,22 @@
         z-index: 109;
         left: 10px;
         top: 100px;
+
+        i.triangle-top {
+          width: 30px;
+          height: 24px;
+          position: absolute;
+          left: 30px;
+          top: -24px;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          display: inline-block;
+          background-image: url('/triangle.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+        }
 
         span {
           display: block;
@@ -269,6 +297,11 @@
 
     a:hover {
       color: #F6912D;
+
+      i.triangle {
+        border-bottom: 0;
+        border-top: 10px solid #F6912D;
+      }
     }
 
     a.active {

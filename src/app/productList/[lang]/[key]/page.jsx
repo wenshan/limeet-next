@@ -11,7 +11,6 @@ import LocalStorageClient from '@/components/LocalStorageClient';
 import './index.less';
 
 async function ProductList({ params }) {
-  console.log('ProductList params:', params);
   const { lang, key } = await params;
   const normLang = normalizeLangCode(lang);
   await initI18nServer();
@@ -25,9 +24,9 @@ async function ProductList({ params }) {
       if (item.children && item.children.length > 0) {
         const htmlDropdown = [];
         item.children.forEach((list) => {
-          if (key && list.key == key) {
+          if (key && item.key === key) {
             htmlDropdown.push(
-              <span key={list.key} className='active'>
+              <span key={list.key} active>
                 <Link href={`${list.path}/${list.lang}/${list.value}`} className='nav-link'>{list.name}</Link>
               </span>
             );
@@ -39,12 +38,12 @@ async function ProductList({ params }) {
             );
           }
         });
-        console.log(item.key, currentPage);
         if (item.key === currentPage) {
           html.push(
             <li key={item.name} title={item.name} id='basic-nav-dropdown' className='active'>
-              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name}</Link>
+              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i class="triangle"></i></Link>
               <div className='dropdown-wrap'>
+                <i className='triangle-top'></i>
                 {htmlDropdown}
               </div>
             </li>
@@ -52,8 +51,9 @@ async function ProductList({ params }) {
         } else {
           html.push(
             <li key={item.name} title={item.name} id='basic-nav-dropdown'>
-              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name}</Link>
+              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i class="triangle"></i></Link>
               <div className='dropdown-wrap'>
+                <i className='triangle-top'></i>
                 {htmlDropdown}
               </div>
             </li>

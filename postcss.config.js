@@ -9,7 +9,7 @@ module.exports = {
       replace: true, // 是否替换原有的 px
       mediaQuery: false, // 是否处理媒体查询中的 px
       minPixelValue: 0, // 最小转换的 px 值（小于此值不转换）
-      exclude: /node_modules/i // 排除 node_modules 中的文件
+      // exclude: /node_modules/i // 排除 node_modules 中的文件
     }
   }
 };
