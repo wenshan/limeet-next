@@ -19,14 +19,14 @@ function List() {
             <div className='item'>
               <a href={`/detail/${item.language}/${item.id}/${item.product_id}`}>
                 <div className='img-box'>
-                  <Image src={item.image_link} fluid />
+                  <Image src={item.image_link} fluid alt={item.title} />
                 </div>
                 <div className='title' title={item.title}>
                   {item.title && item.title.length > 60 ? `${item.title.substring(0, 60)}...` : item.title}
                 </div>
                 <div className='price'>
                   <i className='unit'>{item.monetary_unit}</i>
-                  <span className='value'>{item.sale_price_value.min ? item.sale_price_value.min  : 0}</span>
+                  <span className='value'>{item.sale_price_value.min ? item.sale_price_value.min : 0}</span>
                   <span className='del-value'>{item.price_value.max ? item.price_value.max : 0}</span>
                   <span className='original-value'>-{item.discount_value.max ? item.discount_value.max : 0}%</span>
                 </div>
@@ -37,7 +37,7 @@ function List() {
       });
     return html;
   };
-  useEffect(()=>{
+  useEffect(() => {
     getProductListFetch();
   }, []);
   return <Row>{listHtml()}</Row>;

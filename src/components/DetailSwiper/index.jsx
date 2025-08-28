@@ -22,7 +22,7 @@ function DetailSwiper(props) {
       list.map((item, idx) => {
         html.push(
           <Carousel.Item key={idx} index={item.index}>
-            <Image src={item.src} fluid />
+            <Image src={item.src} fluid alt={productDetail.title} />
           </Carousel.Item>
         );
       });
@@ -57,7 +57,7 @@ function DetailSwiper(props) {
           cardHtml.push(
             <li className={`${item.current == true ? 'item current' : 'item'}`} key={`${item.product_main_id}_${item.product_id}_${item.id}`} id={`${item.product_main_id}_${item.product_id}_${item.id}`} onClick={() => selectSaleSkuHandle(item, idx)}>
               <div className='box'>
-                {item.saleType === 'pattern' ? (<><div className='pattern'><Image src={`${item.pattern + '?x-oss-process=style/w480'}`} fluid /></div>
+                {item.saleType === 'pattern' ? (<><div className='pattern'><Image src={`${item.pattern + '?x-oss-process=style/w480'}`} fluid alt={item.saleValue} /></div>
                   <div className='pattern-name ellipsis'>{item.pattern_name}</div></>) : (<div className='sale-value ellipsis'>{item.saleValue}</div>)}
               </div>
             </li>

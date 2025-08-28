@@ -13,7 +13,6 @@ const getBannerFetch = async ({ lang }) => {
   const language = lang;
   try {
     const result = await getBannerServer({ projectId, ...whereParamsBanner, language });
-    console.log('result:', result);
     if (result && result.status == 200 && result.data && result.data && result.data.rows) {
       return result.data.rows;
     } else {
