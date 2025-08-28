@@ -42,7 +42,7 @@ async function Brand({ params }) {
         if (item.key === currentPage) {
           html.push(
             <li key={item.name} title={item.name} id='basic-nav-dropdown' className='active'>
-              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i class="triangle"></i></Link>
+              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i className="triangle"></i></Link>
               <div className='dropdown-wrap'>
                 <i className='triangle-top'></i>
                 {htmlDropdown}
@@ -52,7 +52,7 @@ async function Brand({ params }) {
         } else {
           html.push(
             <li key={item.name} title={item.name} id='basic-nav-dropdown'>
-              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i class="triangle"></i></Link>
+              <Link href={`${item.path}/${item.lang}/${item.value}`} className='nav-link'>{item.name} <i className="triangle"></i></Link>
               <div className='dropdown-wrap'>
                 <i className='triangle-top'></i>
                 {htmlDropdown}
