@@ -1,5 +1,3 @@
-
-import { Dropdown, Navbar, Container, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 import ProductGroup from '@/components/ProductGroup';
 import DetailSwiper from '@/components/DetailSwiper';
 import ProductDetail from '@/components/ProductDetail';
@@ -38,7 +36,6 @@ async function DetailPage({ params }) {
     return false;
   }
   const productDetail = await getProductDetailFetchServer({ id, productId, lang });
-  console.log(productDetail);
   if (!productDetail || (productDetail && !productDetail.saleSkusList)) {
     return false;
   }

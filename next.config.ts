@@ -16,6 +16,7 @@ const nextConfig = {
     // formats: ['image/avif', 'image/webp'],
     // 全局默认质量（1-100，默认 75，根据需求调整）
     // quality: 80,
+    unoptimized: true, // 关键配置：关闭图片优化
   },
 
   // 关键：Turbopack 实验性配置

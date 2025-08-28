@@ -1,10 +1,10 @@
 'use client';
-import { Row, Col, Container, Image } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import RootStore from '@/stores/rootStore';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './index.less';
 
-function List(props) {
+function List() {
   const { productList, getProductListFetch } = RootStore();
 
   const listHtml = () => {

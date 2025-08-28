@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Carousel, Container, Image } from 'react-bootstrap';
 import RootStore from '@/stores/rootStore';
 import { useRouter } from 'next/navigation';
@@ -128,8 +128,6 @@ function DetailSwiper(props) {
 
         });
       }
-      console.log('restSkuList:', restSkuList);
-      console.log('restSwiperImg:', restSwiperImg);
       setSaleSkusList(restSkuList);
       setSwiperImg(restSwiperImg);
     } else {

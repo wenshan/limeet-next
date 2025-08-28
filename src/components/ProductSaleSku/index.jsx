@@ -1,13 +1,13 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import RootStore from '@/stores/rootStore';
-import { Row, Col, Container, Card, Image, Toast } from 'react-bootstrap';
+import {Container, Image } from 'react-bootstrap';
 
 import './index.less';
 function ProductSaleSku() {
   const { productDetail } = RootStore();
   const [saleSkus, setSaleSkus] = useState(productDetail.saleSkusList);
-  const [showSku, setShowSku] = useState(true);
+  const [setShowSku] = useState(true);
   const [currentSaleSku, setCurrentSaleSku] = useState(productDetail.saleSkusList[0]);
 
   const selectSaleSku = (item, idx) => {
@@ -31,10 +31,6 @@ function ProductSaleSku() {
     setSaleSkus(newSaleSkus);
     setCurrentSaleSku(item);
   };
-
-  const toggleShowSku = ()=> {
-    setShowSku(false);
-  }
 
   const cardHtmlSku = ()=>{
     const cardHtml = [];

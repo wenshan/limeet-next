@@ -13,8 +13,7 @@ async function ProductAttr({ productDetail }) {
   }
   const listAttr = () => {
     const html = [];
-    if (data && data.length && data[0]) {
-      // eslint-disable-next-line no-unused-expressions
+    if (data && data.length && data[0]) { 
       data.forEach((item, idx) => {
         html.push(
           <li key={idx}>

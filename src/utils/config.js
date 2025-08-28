@@ -16,8 +16,6 @@ const apiUrl = () => {
   return url;
 };
 
-/* eslint-enable no-undef */
-
 module.exports = {
   TITLE: '翠苑三区',
   API_URL: apiUrl(),

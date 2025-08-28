@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-anonymous-default-export
-export default (list, currentItem = {}) => {
+export default (list = {}) => {
   // https://juejin.cn/post/7043324432537878536
   // https://www.xiabingbao.com/post/comments/comments-list-to-tree-r7zsnb.html
   const newList = list || []; // 避免影响外层的数组
@@ -21,7 +21,7 @@ export default (list, currentItem = {}) => {
     }
   });
 
-  map.forEach((value, key) => {
+  map.forEach((value) => {
     rowsList.push(Object.assign({}, value));
     if (value.father_key) {
       let parentItem = map.get(value.father_key);

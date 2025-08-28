@@ -1,7 +1,4 @@
-/* eslint-disable no-undef */
 import { create } from 'zustand';
-// import LanguageDetector from 'i18next-browser-languagedetector';
-// import languageI18next from '@/constant/languageI18next';
 import { persist } from 'zustand/middleware';
 import initMenu from '@/constant/menuNav';
 import allCategoriesInit from '@/constant/allCategoriesInit';
@@ -10,7 +7,6 @@ import {
   queryProductList,
   queryProductCategories,
   productDetail,
-  queryProductGroup,
   getBanner,
 } from '@/services/index';
 

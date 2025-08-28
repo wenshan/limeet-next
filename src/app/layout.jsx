@@ -1,8 +1,7 @@
-// import { QueryClient, QueryClientProvider } from "react-query";
-import Footer from "../components/Footer";
-import ICP from '../components/Icp';
-import '../styles/global.less';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "@/components/Footer";
+import ICP from '@/components/Icp';
+import '@/styles/global.less';
+import 'bootstrap/dist/css/bootstrap.min.css'; // 关键：导入 Bootstrap 样式
 
 export default function RootLayout({ children }) {
   return (

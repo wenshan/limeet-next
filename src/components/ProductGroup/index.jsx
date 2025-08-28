@@ -1,8 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import RootStore from '@/stores/rootStore';
-import { Row, Col, Container } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
+import { Container } from 'react-bootstrap';
 import {
   queryProductGroup
 } from '@/services/index';
@@ -33,7 +32,7 @@ function ProductGroup() {
     () => {
       getItemGroupList();
     },
-    [ item_group_id, pagination ]
+    [item_group_id, pagination]
   );
   const prev = () => {
     const { current } = pagination;

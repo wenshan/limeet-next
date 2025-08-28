@@ -40,6 +40,7 @@ const Tool = {
    * @return {string} 替换后的字符串
    * 中文 code 范围： U+4E00 - U+9FFFF
    */
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   replaceExceedEnd(str, maxWidth = 12, replace = '...') {
     let width = 0;
     let index;
@@ -177,7 +178,7 @@ const Tool = {
   /*
     format date for clothes detail
   */
-  formatDete(val) {
+  formatDate(val) {
     const date = new Date(val); // Mon Jul 16 2018 13:55:59 GMT+0800 (中国标准时间)
     const str = date.toLocaleString(); // "2018/7/16 下午1:55:59"
     const msString = String(date); // 'Mon Jul 16 2018 13:55:59 GMT+0800 (中国标准时间)'

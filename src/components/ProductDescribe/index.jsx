@@ -4,11 +4,9 @@ import Title from '../Title';
 
 import './index.less';
 
-// eslint-disable-next-line @next/next/no-async-client-component
 async function ProductHighlight({productDetail}) {
   await initI18nServer();
   const { description } = productDetail;
-  console.log('description:', description);
   if (!description) {
     return false;
   }

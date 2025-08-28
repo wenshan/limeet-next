@@ -11,6 +11,7 @@ export default function rotateBase64(data, edg = 90) {
       console.error('旋转角度必须是90的倍数!');
       throw '旋转角度必须是90的倍数!';
     }
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     edg < 0 && (edg = edg % 360 + 360);
     const quadrant = (edg / 90) % 4; //旋转象限
     const cutCoor = { sx: 0, sy: 0, ex: 0, ey: 0 }; //裁剪坐标
