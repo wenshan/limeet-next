@@ -1,3 +1,4 @@
+'use client';
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import RootStore from '@/stores/rootStore';
 import { useEffect, useState } from 'react';
@@ -16,7 +17,7 @@ function List(props) {
         html.push(
           <Col key={idx} xs={6} sm={4} xxl={3}>
             <div className='item'>
-              <a href={`/detail/${item.id}/${item.product_id}/${item.language}`}>
+              <a href={`/detail/${item.language}/${item.id}/${item.product_id}`}>
                 <div className='img-box'>
                   <Image src={item.image_link} fluid />
                 </div>

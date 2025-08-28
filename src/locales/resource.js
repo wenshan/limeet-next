@@ -16,5 +16,17 @@ const resources = {
   ja: {
     translation: ja,
   },
+  'en-US': {
+    translation: en,
+  },
+  'zh-CN': {
+    translation: zh,
+  },
+  'zh-TW': {
+    translation: tw,
+  },
+  'ja-JP': {
+    translation: ja,
+  },
 };
 export default resources;

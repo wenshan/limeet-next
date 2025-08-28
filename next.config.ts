@@ -12,6 +12,10 @@ const nextConfig = {
   },
   images: {
     domains: ['img.limeetpet.com'], // 添加这个域名
+    // 优先使用 AVIF（比 WebP 更小），其次 WebP
+    // formats: ['image/avif', 'image/webp'],
+    // 全局默认质量（1-100，默认 75，根据需求调整）
+    // quality: 80,
   },
 
   // 关键：Turbopack 实验性配置

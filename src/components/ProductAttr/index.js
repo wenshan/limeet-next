@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
-import RootStore from '@/stores/rootStore';
-import { Row, Col, Container } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
+import { initI18nServer, default as i18n } from '@/locales/i18n_server';
+import { Container } from 'react-bootstrap';
 import Title from '../Title';
 
 import './index.less';
 
-function ProductAttr() {
-  const {t} = useTranslation();
-  const { productDetail } = RootStore();
+async function ProductAttr({ productDetail }) {
+  await initI18nServer();
+  const { product_detail} = productDetail;
+  const data = JSON.parse(product_detail);
+  if (!data || !data[0]) {
+    return;
+  }
   const listAttr = () => {
     const html = [];
-    if (
-      productDetail &&
-      Object.prototype.toString.call(productDetail) === '[object Array]' &&
-      productDetail.length
-    ) {
+    if (data && data.length && data[0]) {
       // eslint-disable-next-line no-unused-expressions
-      productDetail.map((item, idx) => {
+      data.forEach((item, idx) => {
         html.push(
           <li key={idx}>
             <span className='name ellipsis' title={item.attribute_name}>
@@ -34,7 +32,7 @@ function ProductAttr() {
   };
   return (
     <Container className='product-attr clearfix'>
-      <Title title={t('common.title.attribute')} />
+      <Title title={i18n.t('common.title.attribute')} />
       <div className='clearfix'>
         <ul>{listAttr()}</ul>
       </div>

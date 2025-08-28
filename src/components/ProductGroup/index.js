@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 import RootStore from '@/stores/rootStore';
 import { Row, Col, Container } from 'react-bootstrap';

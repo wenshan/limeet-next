@@ -1,3 +1,4 @@
+'use client';
 import React, { Component } from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';

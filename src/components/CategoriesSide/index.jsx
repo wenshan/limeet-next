@@ -1,3 +1,4 @@
+'use client';
 import { Nav } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -7,7 +8,7 @@ import { useParams } from 'next/navigation';
 
 import './index.less';
 
-function CategoriesSide() {
+function CategoriesSide({ lang }) {
   const routes = useRouter();
   const { categories, setCategories, product_type_id, setProductTypeId, getCategoriesFetch } = RootStore();
   const { key } = useParams();
@@ -22,7 +23,7 @@ function CategoriesSide() {
         }
       });
       setCategories(list);
-      routes.push(`/productList/${key}`);
+      routes.push(`/productList/${lang}/${key}`);
     }
   };
   useEffect(() => {

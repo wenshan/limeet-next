@@ -6,7 +6,7 @@ import { Dropdown, Navbar, Container, Nav, NavDropdown, Row, Col, Button } from 
 export default function IndexPage() {
   const router = useRouter();
   const backClick = () => {
-    router.push('/');
+    router.push('/en-US');
   };
   return (
     <>

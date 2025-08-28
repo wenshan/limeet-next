@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
-import RootStore from '@/stores/rootStore';
-import { Row, Col, Container, Image } from 'react-bootstrap';
-import Title from '../Title';
+import { Container, Image } from 'react-bootstrap';
 import './index.less';
-function ProductDetail() {
-  const { id, setProductId, productDetail } = RootStore();
-  const { image_link, additional_image_link, lifestyle_image_link } = productDetail;
+function ProductDetail({ productDetail }) {
+  const { lifestyle_image_link } = productDetail;
+  if (!lifestyle_image_link || !lifestyle_image_link[0]) {
+    return;
+  }
   const imgList = () => {
     const html = [];
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions

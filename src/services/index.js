@@ -1,48 +1,104 @@
-import Request from '@/utils/request';
-
+import { fetchData } from '@/utils/fetch';
 // http://wiki.tools.msparis.com/pages/viewpage.action?pageId=1015930
 export const getBanner = (params) =>
-  Request('api/web/banner/query', {
+  fetchData('api/web/banner/query', {
     method: 'POST',
-    data: params,
+    body: JSON.stringify(params),
     config: {
-      isToast: false
+      server: false, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败',
+      localStorage: {
+        keys: ['i18nextLng'], // 读取这两个字段
+        merge: {
+          enabled: true,
+          strategy: 'preserve' // 请求数据优先
+        }
+      }
     }
   });
-
+export const getBannerServer = (params) =>
+  fetchData('api/web/banner/query', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
 // http://wiki.tools.msparis.com/pages/viewpage.action?pageId=2130801
 export const queryProductList = (params = {}) =>
-  Request('api/web/product/queryProductList', {
+  fetchData('api/web/product/queryProductList', {
     method: 'POST',
-    data: params,
+    body: JSON.stringify(params),
     config: {
-      isToast: false
+      server: false, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
     }
   });
 
 // wiki: http://wiki.tools.msparis.com/pages/viewpage.action?pageId=1016417
 export const queryProductCategories = (params) =>
-  Request('api/web/product/queryProductCategories', {
+  fetchData('api/web/product/queryProductCategories', {
     method: 'POST',
-    data: params,
+    body: JSON.stringify(params),
     config: {
-      isToast: false
+      server: false, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+export const queryProductCategoriesServer = (params) =>
+  fetchData('api/web/product/queryProductCategories', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
     }
   });
 export const productDetail = (params) =>
-  Request('api/web/product/productDetail', {
+  fetchData('api/web/product/productDetail', {
     method: 'POST',
-    data: params,
+    body: JSON.stringify(params),
     config: {
-      isToast: false
+      server: false, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
     }
   });
 // 相关组
 export const queryProductGroup = (params) =>
-  Request('api/web/product/queryProductGroup', {
+  fetchData('api/web/product/queryProductGroup', {
     method: 'POST',
-    data: params,
+    body: JSON.stringify(params),
     config: {
-      isToast: false
+      server: false, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+  export const productDetailServer = (params) =>
+  fetchData('api/web/product/productDetail', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+// 相关组
+export const queryProductGroupServer = (params) =>
+  fetchData('api/web/product/queryProductGroup', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
     }
   });

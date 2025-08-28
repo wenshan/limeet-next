@@ -1,12 +1,10 @@
 /* eslint-disable no-undef */
 import { create } from 'zustand';
-import store from 'store2';
-import { useTranslation } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import languageI18next from '../constant/languageI18next';
-import { useRouter } from 'next/navigation';
+// import LanguageDetector from 'i18next-browser-languagedetector';
+// import languageI18next from '@/constant/languageI18next';
 import { persist } from 'zustand/middleware';
-import initMenu from '../constant/menuNav';
+import initMenu from '@/constant/menuNav';
+import allCategoriesInit from '@/constant/allCategoriesInit';
 
 import {
   queryProductList,
@@ -16,7 +14,7 @@ import {
   getBanner,
 } from '@/services/index';
 
-const lng = (new LanguageDetector()).detect() || 'en';
+// const lng = (new LanguageDetector()).detect() || 'en';
 
 const initProductDetail = {
   image_link: '', 
@@ -27,18 +25,6 @@ const initProductDetail = {
   lifestyle_image_link: '',
   monetary_unit: '',
   saleSkusList: [],
-};
-
-const allCategoriesInit = {
-  key: 'all',
-  title: 'All Product'
-};
-
-const allTitle = {
-  'en-US': 'All Product',
-  'ja-JP': 'すべて',
-  'zh-CN': '所有商品',
-  'zh-TW': '所有商品'
 };
 
 const paginationInit = {
@@ -52,10 +38,10 @@ const whereParamsBanner = {
   type: 'home'
 };
 
-const lang = (languageI18next[lng] && languageI18next[lng].value) || 'en-US';
+// const lang = (languageI18next[lng] && languageI18next[lng].value) || 'en-US';
 const RootStore = create(persist((set, get)=>({
   projectId: 1747727677,
-  language: lang,
+  language: 'ja-JP',
   categories: [],
   product_type_id: 'all',
   swiperBanner: [],
@@ -64,20 +50,10 @@ const RootStore = create(persist((set, get)=>({
   productDetail: initProductDetail,
   saleSkusList: [],
   currentSaleSku: {},
-  menu: initMenu[lang],
+  menu: initMenu['ja-JP'],
   swiperBanner: [],
   setUrLanguage: ()=>{
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const { i18n } = useTranslation();
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const router = useRouter();
-    const query = router.query
-    const lang = query.lang || store.get('lang') || 'ja-JP';
-    if (lang) {
-      set((state)=>({...state, language: lang}));
-      i18n.changeLanguage(lang);
-      store.set('lang', lang);
-    }
+
   },
   setLanguage: (lang)=>{
     set((state)=>({...state, language: lang}));
@@ -86,7 +62,6 @@ const RootStore = create(persist((set, get)=>({
     if (rows && rows[0]) {
       set((state)=>({...state, categories: rows}));
     }
-    // product_type_id:  rows[0].key
   },
   setProductTypeId: (id)=>{
     if (id) {
@@ -97,7 +72,7 @@ const RootStore = create(persist((set, get)=>({
     const { projectId, language, setCategories, setProductTypeId} = get();
     const result = await queryProductCategories({ projectId, language });
     if (result && result.status && result.status === 200 && result.data.rows) {
-      const allCategories = Object.assign({}, allCategoriesInit, { title: allTitle[language] });
+      const allCategories = Object.assign({}, allCategoriesInit[language]);
       const rows = [];
       rows.push(allCategories);
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions
@@ -128,10 +103,15 @@ const RootStore = create(persist((set, get)=>({
       setProductListPagination(Object.assign({}, pagination, { total: result.data.count }));
     }
   },
+  setProductDetail: async(productDetail)=>{
+    if (productDetail && productDetail.saleSkusList && productDetail.saleSkusList[0]) {
+      set((stats)=>({...stats, productDetail, saleSkusList: productDetail.saleSkusList, currentSaleSku: productDetail.saleSkusList[0]}));
+    }
+  },
   getProductDetailFetch: async(query)=> {
     const { projectId } = get();
-    const { id, productId, lng} = query;
-    const result = await productDetail({ id, product_id: productId, projectId, language:lng });
+    const { id, productId, language} = query;
+    const result = await productDetail({ id, product_id: productId, projectId, language });
     if (result && result.status === 200 && result.data) {
       set((stats)=>({...stats, productDetail: result.data, saleSkusList: result.data.saleSkusList, currentSaleSku: result.data.saleSkusList[0]}));
     }
@@ -162,5 +142,7 @@ const RootStore = create(persist((set, get)=>({
     }
   }
 }
-)));
+),{
+  name: 'limeetpet',
+}));
 export default RootStore;
