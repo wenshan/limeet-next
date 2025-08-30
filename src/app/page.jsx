@@ -1,5 +1,4 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerSwiper from '@/components/BannerSwiper';
 import Categories from '@/components/Categories';
@@ -117,7 +116,7 @@ async function HomePage({ params }) {
                 </Link>
               </div>
               <div className='des'>
-                <h1><Link href='/'>LIMEET</Link></h1>
+                <h1><Link href='/'>{i18n.t('common.header.name')}</Link></h1>
                 <h2>
                   {i18n.t('common.header.name.second')}
                   <img src='https://img.limeetpet.com/limeet/maogou.png' alt="Limeet" />

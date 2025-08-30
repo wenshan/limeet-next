@@ -1,8 +1,9 @@
 {
+  "site.lang": "zh-CN",
   "site.title": "Limeet - 为宠物营造一个温暖的家",
-  "site.keywords": "Limeet",
-  "site.description": "",
-  "common.header.name": "Limeet",
+  "site.keywords": "Limeet, 猫用品供应商，猫窝，窝塔，猫游戏地毯，猫隧道，猫用品",
+  "site.description": "我们专注给跨境电商提供更好的猫用品，更低廉质优的猫用品",
+  "common.header.name": "LIMEET 宠物家",
   "common.header.name.second": "为宠物营造一个温暖的家。",
   "common.header.name.des": "我们设计了许多富有创意的猫家具，让猫和人能够温馨地共存。",
   "common.nav.home": "首页",

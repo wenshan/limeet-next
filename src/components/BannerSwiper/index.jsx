@@ -1,5 +1,4 @@
 'use client';
-import React, { useEffect } from 'react';
 import { Carousel, Container, Image } from 'react-bootstrap';
 import RootStore from '@/stores/rootStore';
 
@@ -17,7 +16,7 @@ function Banner({ }) {
         if (item.is_show && item.src) {
           html.push(
             <Carousel.Item key={idx} title={item.name}>
-              <a href={item.url} target='_blank' title={item.name} ><Image src={item.src} fluid /> </a>
+              <a href={item.url} target='_blank' title={item.name} ><Image src={item.src} fluid alt={item.name} /> </a>
             </Carousel.Item>
           );
         }

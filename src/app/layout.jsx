@@ -1,17 +1,24 @@
+import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import Footer from "@/components/Footer";
 import ICP from '@/components/Icp';
+import normalizeLangCode from '@/utils/langUtils';
 import '@/styles/global.less';
 import 'bootstrap/dist/css/bootstrap.min.css'; // 关键：导入 Bootstrap 样式
 
-export default function RootLayout({ children }) {
+async function RootLayout({ children, params }) {
+  const { lang = 'ja-JP', key } = await params;
+  const normLang = normalizeLangCode(lang);
+  await initI18nServer();
+  await i18n.changeLanguage(normLang);
   return (
-    <html lang="en">
+    <html lang={normLang}>
       <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="keywords" content="Limeet, pet, cat jump, cats as pets" />
-        <meta name="description" content="Limeet, We design many creative cat furniture items, allowing cats and people to coexist warmly." />
-        <title>Limeet - Creating a Warm Home for Pets.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <meta name="keywords" content={i18n.t('site.keywords')} />
+        <meta name="description" content={i18n.t('site.description')} />
+        <title>{i18n.t('site.title')}</title>
         {/* 直接嵌入全局样式 */}
         <style>
           {`
@@ -51,3 +58,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+export default RootLayout;

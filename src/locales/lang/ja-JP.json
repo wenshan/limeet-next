@@ -1,8 +1,9 @@
 {
-  "site.title": "Limeet - ペットのための暖かい家を作ります",
-  "site.keywords": "Limeet",
-  "site.description": "",
-  "common.header.name": "Limeet",
+  "site.lang": "ja-JP",
+  "site.title": "LIMEET ペットホーム - ペットのための暖かい家を作ります",
+  "site.keywords": "Limeet, Limeetket, Limeetpet,キャットハウス,猫おもちゃ,猫タワー,猫キャットハウス,猫プレイマット,猫トンネル長い,キャットベッド,キャットタワー,猫ハウス,キャットハウス,猫用ベッド,猫ベッド,猫のベッド,猫ベッド,フェルト猫ベッド,猫ちぐら,猫用品の供給",
+  "site.description": "Limeet, ペットのための暖かい家を作ります，猫と人が温かく共存できる、クリエイティブな猫用家具を多数デザインしています。",
+  "common.header.name": "LIMEET ペットホーム",
   "common.header.name.second": "ペットのための暖かい家を作ります。",
   "common.header.name.des": "猫と人が温かく共存できる、クリエイティブな猫用家具を多数デザインしています。",
   "common.nav.home": "表紙",
