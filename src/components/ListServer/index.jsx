@@ -1,12 +1,29 @@
-'use client';
 import { Row, Col, Image } from 'react-bootstrap';
-import RootStore from '@/stores/rootStore';
-import { useEffect } from 'react';
+import LocalStorageClient from '@/components/LocalStorageClient';
+import { queryProductListServer } from '@/services/index';
+
 import './index.less';
 
-function List() {
-  const { productList, getProductListFetch } = RootStore();
+const getProductListFetchServer = async ({ lang, key }) => {
+  const pagination = {
+    current: 1,
+    pageSize: 100,
+    total: 0
+  };
+  const projectId = 1747727677;
+  const language = lang || 'ja-JP';
+  const product_type_id = key;
+  const result = await queryProductListServer({ projectId, ...pagination, product_type_id, language });
+  if (result && result.status === 200 && result.data && result.data.rows) {
+    return result.data.rows;
+  } else {
+    return [];
+  }
+}
 
+async function ListServer({ lang, key }) {
+  const currentKey = key || 'all';
+  const productList = await getProductListFetchServer({ lang, key: currentKey });
   const listHtml = () => {
     const html = [];
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
@@ -15,7 +32,7 @@ function List() {
       productList.length &&
       productList.map((item, idx) => {
         html.push(
-          <Col key={idx} xs={6} sm={4} xxl={3}>
+          <Col key={`${idx}_${item.product_id}`} xs={6} sm={4} xxl={3}>
             <div className='item'>
               <a href={`/detail/${item.language}/${item.id}/${item.product_id}`}>
                 <div className='img-box'>
@@ -37,10 +54,11 @@ function List() {
       });
     return html;
   };
-  useEffect(() => {
-    getProductListFetch();
-  }, []);
-  return <Row>{listHtml()}</Row>;
-}
+  return (
+    <>
+      <LocalStorageClient productList={productList} key={currentKey}></LocalStorageClient>
+      <Row>{listHtml()}</Row>
+    </>)
+};
 
-export default List;
+export default ListServer;

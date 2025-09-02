@@ -5,8 +5,10 @@ import RootStore from '@/stores/rootStore';
 
 // set((stats) => ({ ...stats, productDetail: result.data, saleSkusList: result.data.saleSkusList, currentSaleSku: result.data.saleSkusList[0] }));
 
-function LocalStorageClient({ lang, swiperBanner, productDetail }) {
-  const { setLanguage, setSwiperBanner, setProductDetail } = RootStore();
+function LocalStorageClient({ lang, swiperBanner, productDetail, key, categories, productList }) {
+  const { setLanguage, setSwiperBanner, setProductDetail, setCategories, setProductTypeId, setProductList } = RootStore();
+  // setCategories(rows);
+  // setProductTypeId(key);
   useEffect(() => {
     if (swiperBanner) {
       setSwiperBanner(swiperBanner);
@@ -15,6 +17,15 @@ function LocalStorageClient({ lang, swiperBanner, productDetail }) {
       setLanguage(lang);
       store.set('lang', lang);
       store.set('i18nextLng', lang);
+    }
+    if (categories) {
+      setCategories(categories);
+    }
+    if (key) {
+      setProductTypeId(key);
+    }
+    if (productList) {
+      setProductList(productList);
     }
     if (productDetail && productDetail.saleSkusList && productDetail.saleSkusList[0]) {
       setProductDetail(productDetail);

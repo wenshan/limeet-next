@@ -5,7 +5,7 @@ import resource from "./resource";
 i18n
   .use(initReactI18next)
   .init({
-      debug: true,
+      debug: false,
       lng: 'ja-JP',
       resources: resource,
       fallbackLng: 'ja-JP',

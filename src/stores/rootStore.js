@@ -55,7 +55,7 @@ const RootStore = create(persist((set, get)=>({
     set((state)=>({...state, language: lang}));
   },
   setCategories: (rows)=>{
-    if (rows && rows[0]) {
+    if (rows) {
       set((state)=>({...state, categories: rows}));
     }
   },
@@ -94,8 +94,8 @@ const RootStore = create(persist((set, get)=>({
   getProductListFetch: async()=> {
     const { projectId, pagination, language, setProductList, setProductListPagination, product_type_id} = get();
     const result = await queryProductList({ projectId, ...pagination, product_type_id, language });
-    if (result && result.status === 200 && result.data) {
-      setProductList(result.data);
+    if (result && result.status === 200 && result.data && result.data.rows) {
+      setProductList(result.data.rows);
       setProductListPagination(Object.assign({}, pagination, { total: result.data.count }));
     }
   },

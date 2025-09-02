@@ -90,7 +90,7 @@ async function ProductList({ params }) {
               </Link>
             </div>
             <div className='des'>
-              <h1><Link href='/'>LIMEET</Link></h1>
+              <h1><Link href='/'>{i18n.t('common.header.name')}</Link></h1>
               <h2>
                 {i18n.t('common.header.name.second')}
                 <img src='https://img.limeetpet.com/limeet/maogou.png' alt="Limeet" />

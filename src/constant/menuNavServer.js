@@ -18,7 +18,7 @@ export default {
       lang: 'en-US',
       children: [
         {
-          name:  'Games Toys',
+          name:  'Cat tunnels、play',
           value: '33381771',
           path: '/productList',
           key: '33381771',
@@ -27,7 +27,7 @@ export default {
           lang: 'en-US',
         },
         {
-          name: 'Cat Bed',
+          name: 'Cat beds、mats',
           value: '12771663',
           path: '/productList',
           key: '12771663',
@@ -45,6 +45,15 @@ export default {
           lang: 'en-US',
         },
         {
+        name: 'Catnip toys、stuffed animals',
+        value: '54155552',
+        path: '/productList',
+        key: '54155552',
+        father_key: 'product',
+        current: 'product',
+        lang: 'ja-JP'
+      },
+              {
           name: 'Food Box',
           value: '18885882',
           path: '/productList',
@@ -100,7 +109,7 @@ export default {
       lang: 'ja-JP',
       children: [
       {
-        name:  'ゲームのおもちゃ',
+        name:  '猫のトンネル、遊び',
         value: '33381771',
         path: '/productList',
         key: '33381771',
@@ -109,7 +118,7 @@ export default {
         lang: 'ja-JP',
       },
       {
-        name: '猫の巣',
+        name: '猫用ベッドとマット',
         value: '12771663',
         path: '/productList',
         key: '12771663',
@@ -118,7 +127,7 @@ export default {
         lang: 'ja-JP'
       },
       {
-        name: '猫の家具と建物',
+        name: '猫用ベッド、ハウス、タワー',
         value: '97974047',
         path: '/productList',
         key: '97974047',
@@ -127,6 +136,15 @@ export default {
         lang: 'ja-JP'
       },
       {
+        name: 'キャットニップのおもちゃとぬいぐるみ',
+        value: '54155552',
+        path: '/productList',
+        key: '54155552',
+        father_key: 'product',
+        current: 'product',
+        lang: 'ja-JP'
+      },
+            {
         name: 'フードボックス',
         value: '18885882',
         path: '/productList',
@@ -182,7 +200,7 @@ export default {
       lang: 'zh-CN',
       children: [
       {
-        name:  '游戏玩具',
+        name:  '猫隧道、游戏玩耍',
         value: '33381771',
         path: '/productList',
         key: '33381771',
@@ -191,7 +209,7 @@ export default {
         lang: 'zh-CN'
       },
       {
-        name: '猫窝',
+        name: '猫窝、猫垫子',
         value: '12771663',
         path: '/productList',
         key: '12771663',
@@ -200,13 +218,21 @@ export default {
         lang: 'zh-CN'
       },
       {
-        name: '猫家具&拼搭',
+        name: '猫床、猫屋、猫塔',
         value: '97974047',
         path: '/productList',
         key: '97974047',
         father_key: 'product',
         current: 'product',
         lang: 'zh-CN'
+      },{
+        name: '猫薄荷玩具、毛绒玩具',
+        value: '54155552',
+        path: '/productList',
+        key: '54155552',
+        father_key: 'product',
+        current: 'product',
+        lang: 'ja-JP'
       },
       {
         name: '食盒',

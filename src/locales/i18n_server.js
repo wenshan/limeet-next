@@ -6,7 +6,7 @@ export async function initI18nServer() {
   if (!i18n.isInitialized) {
     await i18n
       .init({
-        debug: true,
+        debug: false,
         lng: 'ja-JP',
         resources: resource,
         fallbackLng: 'ja-JP',

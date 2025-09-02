@@ -1,8 +1,8 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerSwiper from '@/components/BannerSwiper';
-import Categories from '@/components/Categories';
-import List from '@/components/List';
+import CategoriesServer from '@/components/CategoriesServer';
+import ListServer from '@/components/ListServer';
 import Title from '@/components/Title';
 import ChangeLanguage from '@/components/ChangeLanguage'
 import initMenuServer from '@/constant/menuNavServer';
@@ -140,10 +140,10 @@ async function HomePage({ params }) {
         </div>
       </Container>
       <BannerSwiper></BannerSwiper>
-      <Categories lang={normLang}></Categories>
+      <CategoriesServer lang={normLang} key='all'></CategoriesServer>
       <Container fluid className='list-wrap'>
         <Title title={i18n.t('common.title.sales')} />
-        <List from="home" lang={normLang}></List>
+        <ListServer from="home" lang={normLang} key='all'></ListServer>
         <Row>
           <Col>
             <div className='more-wrap clearfix'>

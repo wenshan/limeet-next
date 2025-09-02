@@ -1,6 +1,5 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
-import { Container } from 'react-bootstrap';
-import Image from 'next/image';
+import { Container, Image } from 'react-bootstrap';
 import ChangeLanguage from '@/components/ChangeLanguage'
 import { headers } from 'next/headers';
 import initMenuServer from '@/constant/menuNavServer';
@@ -92,7 +91,7 @@ async function Brand({ params }) {
                 </Link>
               </div>
               <div className='des'>
-                <h1><Link href='/'>LIMEET</Link></h1>
+                <h1><Link href='/'>{i18n.t('common.header.name')}</Link></h1>
                 <h2>
                   {i18n.t('common.header.name.second')}
                   <img src='https://img.limeetpet.com/limeet/maogou.png' alt="Limeet" />
@@ -122,7 +121,7 @@ async function Brand({ params }) {
           <div className='text'>
             <p>{i18n.t('brand.page.story.list01')}</p>
             <p>{i18n.t('brand.page.story.list02')}</p>
-            <Image src="https://img.limeetpet.com/limeet/brand/brand.jpeg" alt='LIMEET BRAND' width={1500} height={563} priority style={{ objectFit: 'cover' }}></Image>
+            <Image src="https://img.limeetpet.com/limeet/brand/brand.jpeg" alt='LIMEET BRAND' fluid></Image>
             <p></p>
             <p>{i18n.t('brand.page.story.list03')}</p>
             <p>{i18n.t('brand.page.story.list04')}</p>

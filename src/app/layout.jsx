@@ -35,16 +35,10 @@ async function RootLayout({ children, params }) {
           as="image"
           type="image/png"
         />
-        {/** 
-        <link
-          rel="preload"
-          href="https://img.limeetpet.com/217/91774973/banner1_x2.jpg" // 图片URL
-          as="image" // 声明资源类型为图片
-          imagesrcset="https://picsum.photos/id/1015/600/300 600w, https://picsum.photos/id/1015/1200/600 1200w" // 响应式图片源
-          imagesizes="(max-width: 768px) 600px, 1200px" // 响应式尺寸描述
-          type="image/jpeg" // 图片MIME类型
-        />
-        */}
+        <link rel="alternate" hrefLang="ja-JP" href="https://www.limeetpet.com/" />
+        <link rel="alternate" hrefLang="ja-JP" href="https://www.limeetpet.com/ja-JP" />
+        <link rel="alternate" hrefLang="en-US" href="https://www.limeetpet.com/en-US" />
+        <link rel="alternate" hrefLang="zh-CN" href="https://www.limeetpet.com/zh-CN" />
       </head>
       <body className="root">
         <>

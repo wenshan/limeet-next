@@ -221,14 +221,13 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
 
     // 9. 执行请求
     const response = await fetch(fullUrl, fetchOptions);
-
     // 10. 打印响应状态（调试）
     if (debug.logResponse) {
       debugLog('收到响应', {
         status: response.status,
         statusText: response.statusText,
         url: response.url,
-        cacheStatus: response.headers.get('x-nextjs-cache') || 'unknown'
+        cacheStatus: response.headers.get('x-nextjs-cache') || 'unknown',
       });
     }
 
@@ -254,7 +253,7 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
           : `对象 (属性数量: ${Object.keys(data).length})`
         : `文本 (长度: ${String(data).length})`;
       
-      debugLog(`响应数据解析完成: ${logData}`);
+      debugLog(`响应数据解析完成: ${logData}`, data);
     }
 
     // 13. 客户端缓存处理

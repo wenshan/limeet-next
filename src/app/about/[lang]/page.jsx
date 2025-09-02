@@ -1,6 +1,5 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
-import { Container } from 'react-bootstrap';
-import Image from 'next/image';
+import { Container, Image } from 'react-bootstrap';
 import Whatapp from '@/components/Whatapp';
 import ChangeLanguage from '@/components/ChangeLanguage'
 import { headers } from 'next/headers';
@@ -95,7 +94,7 @@ async function About({ params }) {
                 </Link>
               </div>
               <div className='des'>
-                <h1><Link href='/'>LIMEET</Link></h1>
+                <h1><Link href='/'>{i18n.t('common.header.name')}</Link></h1>
                 <h2>
                   {i18n.t('common.header.name.second')}
                   <img src='https://img.limeetpet.com/limeet/maogou.png' alt="Limeet" />
@@ -124,7 +123,7 @@ async function About({ params }) {
           <div className="des-tx clearfix">
             <h1>{i18n.t("common.about.name")}</h1>
             <p>{i18n.t("common.about.tip")}</p>
-            <img src="https://img.limeetpet.com/limeet/factory.png" alt={i18n.t("common.about.tip")}></img>
+            <Image src="https://img.limeetpet.com/limeet/factory.png" alt={i18n.t("common.about.tip")} fluid></Image>
             <p></p>
             <p>
               <img src="https://img.limeetpet.com/limeet/jiaozhang.png" alt='LIMEET'></img>
