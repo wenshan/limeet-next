@@ -4,7 +4,7 @@ import { queryProductListServer } from '@/services/index';
 
 import './index.less';
 
-const getProductListFetchServer = async ({ lang, key }) => {
+const getProductListFetchServer = async ({ lang, c_key }) => {
   const pagination = {
     current: 1,
     pageSize: 100,
@@ -12,7 +12,7 @@ const getProductListFetchServer = async ({ lang, key }) => {
   };
   const projectId = 1747727677;
   const language = lang || 'ja-JP';
-  const product_type_id = key;
+  const product_type_id = c_key;
   const result = await queryProductListServer({ projectId, ...pagination, product_type_id, language });
   if (result && result.status === 200 && result.data && result.data.rows) {
     return result.data.rows;
@@ -21,8 +21,8 @@ const getProductListFetchServer = async ({ lang, key }) => {
   }
 }
 
-async function ListServer({ lang, key }) {
-  const currentKey = key || 'all';
+async function ListServer({ lang, c_key }) {
+  const currentKey = c_key || 'all';
   const productList = await getProductListFetchServer({ lang, key: currentKey });
   const listHtml = () => {
     const html = [];

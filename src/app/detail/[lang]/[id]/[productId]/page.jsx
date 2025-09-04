@@ -7,8 +7,28 @@ import ProductDescribe from '@/components/ProductDescribe';
 import LocalStorageClient from '@/components/LocalStorageClient';
 import normalizeLangCode from '@/utils/langUtils';
 import { productDetailServer } from '@/services/index';
+import { notFound } from 'next/navigation';
 
 import './index.less';
+
+export async function generateMetadata({ params }) {
+  const { id, productId, lang } = await params;
+  const projectId = 1747727677;
+  const language = lang;
+  if (id && productId && lang) {
+    const result = await productDetailServer({ id, product_id: productId, projectId, language });
+    if (result && result.status === 200 && result.data) {
+      return {
+        title: result.data.title,
+      };
+    } else {
+      notFound();
+    }
+  } else {
+    notFound();
+  }
+
+};
 
 const getProductDetailFetchServer = async ({ id, productId, lang }) => {
   const projectId = 1747727677;

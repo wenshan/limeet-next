@@ -18,7 +18,9 @@ const nextConfig = {
     // quality: 80,
     unoptimized: true, // 关键配置：关闭图片优化
   },
-
+  reactStrictMode: true,
+  // 允许开发环境的跨域来源（根据警告中的域名调整）
+  allowedDevOrigins: ['http://127.0.0.1:3000'],
   // 关键：Turbopack 实验性配置
   experimental: {
     turbo: {

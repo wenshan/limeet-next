@@ -11,19 +11,24 @@ import './index.less';
 const getCategoriesFetchServer = async ({ lang }) => {
   const projectId = 1747727677;
   const language = lang || 'ja-JP';
-  const result = await queryProductCategoriesServer({ projectId, language });
-  if (result && result.status && result.status === 200 && result.data.rows && result.data.rows[0]) {
-    const allCategories = Object.assign({}, allCategoriesInit[language]);
-    result.data.rows.push(allCategories);
-    return result.data.rows;
-  } else {
-    return [];
+  try {
+    const result = await queryProductCategoriesServer({ projectId, language });
+    if (result && result.status && result.status === 200 && result.data.rows && result.data.rows[0]) {
+      const allCategories = Object.assign({}, allCategoriesInit[language]);
+      result.data.rows.push(allCategories);
+      return result.data.rows;
+    } else {
+      return [];
+    }
+  } catch (error) {
+    console.log(error);
   }
 }
 
-async function CategoriesServer({ lang, key }) {
+async function CategoriesServer(props) {
+  const { lang, c_key } = props;
   await initI18nServer();
-  const currentKey = key || 'all';
+  const currentKey = c_key || 'all';
   const categories = await getCategoriesFetchServer({ lang });
   const listHtml = () => {
     const html = [];
@@ -31,7 +36,7 @@ async function CategoriesServer({ lang, key }) {
     categories &&
       categories.length &&
       categories.map((item, idx) => {
-        if (item.action === currentKey) {
+        if (item.key === currentKey) {
           html.push(
             <Col sm={6} key={`${item.key}_${idx}`}>
               <div className='item action'>
@@ -57,7 +62,7 @@ async function CategoriesServer({ lang, key }) {
   };
   return (
     <>
-      <LocalStorageClient categories={categories} key={currentKey}></LocalStorageClient>
+      <LocalStorageClient categories={categories} c_key={currentKey}></LocalStorageClient>
       <Container fluid>
         <div className='categories-server clearfix'>
           <Title title={i18n.t('common.title.categories')} />

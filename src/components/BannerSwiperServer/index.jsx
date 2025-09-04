@@ -25,7 +25,6 @@ const getBannerFetch = async ({ lang }) => {
 
 async function BannerSwiperServer({ lang }) {
   const swiperBanner = await getBannerFetch({ lang });
-  console.log('swiperBanner:', swiperBanner);
   const renderSwiperHtml = () => {
     const html = [];
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions

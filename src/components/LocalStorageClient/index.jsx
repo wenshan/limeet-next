@@ -5,7 +5,7 @@ import RootStore from '@/stores/rootStore';
 
 // set((stats) => ({ ...stats, productDetail: result.data, saleSkusList: result.data.saleSkusList, currentSaleSku: result.data.saleSkusList[0] }));
 
-function LocalStorageClient({ lang, swiperBanner, productDetail, key, categories, productList }) {
+function LocalStorageClient({ lang, swiperBanner, productDetail, c_key, categories, productList }) {
   const { setLanguage, setSwiperBanner, setProductDetail, setCategories, setProductTypeId, setProductList } = RootStore();
   // setCategories(rows);
   // setProductTypeId(key);
@@ -21,8 +21,8 @@ function LocalStorageClient({ lang, swiperBanner, productDetail, key, categories
     if (categories) {
       setCategories(categories);
     }
-    if (key) {
-      setProductTypeId(key);
+    if (c_key) {
+      setProductTypeId(c_key);
     }
     if (productList) {
       setProductList(productList);

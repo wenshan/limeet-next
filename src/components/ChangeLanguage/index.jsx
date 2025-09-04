@@ -18,7 +18,7 @@ function ChangeLanguage() {
     const data = Object.values(languageObj);
     data.map((item) => {
       html.push(
-        <Dropdown.Item key={item.value} onClick={() => popupSelectValue(item.value)} eventKey={item.value}>
+        <Dropdown.Item key={item.value} onClick={() => popupSelectValue(item.value, item.path)} eventKey={item.path} href={item.path} >
           {item.label}
         </Dropdown.Item>
       );
@@ -30,7 +30,7 @@ function ChangeLanguage() {
       return languageObj[language] && languageObj[language].label || 'ja-JP';
     }
   };
-  const popupSelectValue = (value) => {
+  const popupSelectValue = (value, path) => {
     i18n.changeLanguage(value);
     store.set('lang', value);
     store.set('i18nextLng', value);
@@ -38,7 +38,7 @@ function ChangeLanguage() {
     getCategoriesFetch();
     getProductListFetch();
     getBannerFetch();
-    router.push(`/${value}`);
+    router.push(path);
     // window.location.reload();
   };
 

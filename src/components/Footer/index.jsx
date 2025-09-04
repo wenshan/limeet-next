@@ -3,11 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import Whatapp from '@/components/Whatapp';
 import CategoriesFooter from '@/components/CategoriesFooter';
+import normalizeLangCode from '@/utils/langUtils';
 import './index.less';
 
 // eslint-disable-next-line @next/next/no-async-client-component
-async function Footer() {
+async function Footer({ lang }) {
+  const normLang = normalizeLangCode(lang);
   await initI18nServer();
+  await i18n.changeLanguage(normLang);
   return (
     <Container className='footer' fluid>
       <Row>
@@ -17,17 +20,17 @@ async function Footer() {
           </h3>
           <ul className='list'>
             <li>
-              <Link href='/brand'>
+              <Link href={`/brand/${lang}`}>
                 {i18n.t('footer.product.brand.title')}
               </Link>
             </li>
             <li>
-              <Link href='/about.html?key=about'>
+              <Link href={`/about/${lang}`}>
                 {i18n.t('footer.product.factory.title')}
               </Link>
             </li>
             <li>
-              <Link href='/productList/all'>
+              <Link href={`/productList/${lang}/all`}>
                 {i18n.t('footer.product.factory.product')}
               </Link>
             </li>
@@ -37,7 +40,7 @@ async function Footer() {
           <h3 className='title'>
             {i18n.t('footer.product.category.title')}
           </h3>
-          <CategoriesFooter></CategoriesFooter>
+          <CategoriesFooter lang={lang}></CategoriesFooter>
         </Col>
         <Col sm>
           <h3 className='title'>

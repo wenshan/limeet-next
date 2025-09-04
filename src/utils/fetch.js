@@ -1,4 +1,3 @@
-// lib/fetch.js
 /**
  * 封装 Next.js fetch 请求，带有完整调试功能
  * @param {string} url - 请求地址
@@ -6,6 +5,8 @@
  * @param {Object} options.config - 自定义配置（包含调试选项）
  * @returns {Promise} 响应数据对象
  */
+import { notFound } from 'next/navigation';
+
 export async function fetchData(url, { config = {}, ...options } = {}) {
   // 默认配置
   const defaultConfig = {
@@ -17,11 +18,12 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
     withCredentials: false,
     // 调试配置
     debug: {
-      enabled: process.env.NODE_ENV === 'development', // 开发环境默认开启
-      logRequest: true, // 打印请求详情
-      logResponse: true, // 打印响应详情
-      logCache: true, // 打印缓存状态
-      logLocalStorage: true // 打印localStorage操作
+      // enabled: process.env.NODE_ENV === 'development', // 开发环境默认开启
+      enabled: false,
+      logRequest: false, // 打印请求详情
+      logResponse: false, // 打印响应详情
+      logCache: false, // 打印缓存状态
+      logLocalStorage: false // 打印localStorage操作
     },
     // 本地缓存配置
     localCache: {
@@ -222,7 +224,7 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
     // 9. 执行请求
     const response = await fetch(fullUrl, fetchOptions);
     // 10. 打印响应状态（调试）
-    if (debug.logResponse) {
+    if (debug.logResponse && debug.enabled) {
       debugLog('收到响应', {
         status: response.status,
         statusText: response.statusText,
@@ -232,10 +234,20 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
     }
 
     if (!response.ok) {
-      debugLog(`请求失败 [${response.status}]`, {
-        url: fullUrl,
-        statusText: response.statusText
-      });
+      if (debug.enabled){
+        debugLog(`请求失败 [${response.status}]`, {
+          url: fullUrl,
+          statusText: response.statusText
+        });
+      }
+
+      // 新增404状态处理
+      if (response.status === 404) {
+        // 对于App Router使用notFound()触发404页面
+        // 对于Pages Router可使用router.push('/404')
+        notFound();
+      }
+
       throw new Error(`${errorMessage} (${response.status})`);
     }
 
@@ -246,7 +258,7 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
       : await response.text();
 
     // 12. 打印响应数据（调试，仅打印摘要）
-    if (debug.logResponse) {
+    if (debug.logResponse && debug.enabled) {
       const logData = typeof data === 'object' 
         ? Array.isArray(data) 
           ? `数组 (长度: ${data.length})` 
@@ -274,7 +286,10 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
     return data;
 
   } catch (error) {
-    debugLog(`请求错误: ${error.message}`, error);
+    if (debug.enabled) {
+     debugLog(`请求错误: ${error.message}`, error);
+    }
+   
     if (config.throwError !== false) {
       throw error;
     }

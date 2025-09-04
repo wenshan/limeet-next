@@ -4,9 +4,9 @@ export default {
     {
       name: 'Home',
       value: '',
-      path: '/',
-      key: '/',
-      current: 'index',
+      path: '/home',
+      key: 'home',
+      current: 'home',
       active: true,
       lang: 'en-US',
     },
@@ -94,9 +94,9 @@ export default {
     {
       name: '表紙',
       value: '',
-      path: '/',
-      key: '/',
-      current: 'index',
+      path: '/home',
+      key: 'home',
+      current: 'home',
       active: true,
       lang: 'ja-JP',
     },
@@ -185,9 +185,9 @@ export default {
     {
       name: '首页',
       value: '',
-      path: '/',
-      key: '/',
-      current: 'index',
+      path: '/home',
+      key: 'home',
+      current: 'home',
       active: true,
       lang: 'zh-CN'
     },

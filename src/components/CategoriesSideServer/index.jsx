@@ -1,4 +1,4 @@
-import { Nav } from 'react-bootstrap';
+import { Nav, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import LocalStorageClient from '@/components/LocalStorageClient';
 import { queryProductCategoriesServer } from '@/services/index';
@@ -19,28 +19,46 @@ const getCategoriesFetchServer = async ({ lang }) => {
   }
 }
 
-async function CategoriesSide({ lang, key }) {
-  const currentKey = key || 'all';
+async function CategoriesSideServer({ lang, c_key }) {
+  const currentKey = c_key || 'all';
   const categories = await getCategoriesFetchServer({ lang });
   const renderHtml = () => {
     const html = [];
     categories && categories.length && categories.map((item, idx) => {
-      if (item && item.key === currentKey) {
-        html.push(<Nav.Link key={`${item.key}_${idx}`} href={`/productList/${lang}/${item.key}`} active>{item.title}</Nav.Link>);
+      if (item.key == currentKey) {
+        html.push(
+          <li sm={6} key={`${item.key}_${idx}`}>
+            <div className='item active'>
+              <Link href={`/productList/${lang}/${item.key}`} >
+                <span className='text'>{item.title}</span> <i className='icon arrow-tx-right' />
+              </Link>
+            </div>
+          </li>
+        );
       } else {
-        html.push(<Nav.Link key={`${item.key}_${idx}`} href={`/productList/${lang}/${item.key}`} >{item.title}</Nav.Link>);
+        html.push(
+          <li sm={6} key={`${item.key}_${idx}`}>
+            <div className='item'>
+              <Link href={`/productList/${lang}/${item.key}`} >
+                <span className='text'>{item.title}</span> <i className='icon arrow-tx-right' />
+              </Link>
+            </div>
+          </li>
+        );
       }
     });
     return html;
   };
   return (
     <>
-      <LocalStorageClient categories={categories} key={currentKey}></LocalStorageClient>
-      <Nav className="flex-column categories-side-server">
-        {renderHtml()}
-      </Nav>
+      <LocalStorageClient categories={categories} c_key={currentKey}></LocalStorageClient>
+      <div className="flex-column categories-side-server">
+        <ul className='menu'>
+          {renderHtml()}
+        </ul>
+      </div>
     </>
   );
 }
 
-export default CategoriesSide;
+export default CategoriesSideServer;
