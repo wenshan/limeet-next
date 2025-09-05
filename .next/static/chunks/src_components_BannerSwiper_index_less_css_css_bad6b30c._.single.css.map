@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/BannerSwiper/index.less.css.css"],"sourcesContent":[".banner-swiper {\n  position: relative;\n  overflow: hidden;\n  border-radius: 0;\n  margin-top: 0.46875rem;\n  max-height: 26.09375rem;\n}\n.banner-swiper .carousel {\n  overflow: hidden;\n}\n.banner-swiper .carousel-inner {\n  max-height: 26.25rem;\n  min-height: 9.375rem;\n}\n.banner-swiper .carousel-item {\n  max-height: 26.25rem;\n}\n.banner-swiper .swiper-container {\n  width: 100%;\n  height: 13.125rem;\n}\n.banner-swiper .swiper-wrapper {\n  width: 100%;\n  height: 13.125rem;\n}\n.banner-swiper .swiper-wrapper .adm-swiper-slide {\n  width: 100%;\n  height: 13.125rem;\n  overflow: hidden;\n}\n.banner-swiper .swiper-wrapper .adm-swiper-indicator .adm-page-indicator-dot {\n  width: 1.5625rem;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAOA;;;;AAGA;;;;;AAIA;;;;AAGA;;;;;AAQA;;;;;;AAKA"}}]
-}
