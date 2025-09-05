@@ -13,7 +13,7 @@ module.exports = {
       },
       
       // 进程配置
-      instances: 2, // 启动最大实例数（根据 CPU 核心数自动分配，适合负载均衡）
+      instances: 1, // 启动最大实例数（根据 CPU 核心数自动分配，适合负载均衡）
       autorestart: true, // 崩溃后自动重启
       watch: false, // 生产环境关闭文件监听（避免代码变动触发重启）
       max_memory_restart: "1G", // 内存占用超过 1G 时自动重启
