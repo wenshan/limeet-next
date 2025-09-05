@@ -22,30 +22,26 @@ const nextConfig = {
   // 允许开发环境的跨域来源（根据警告中的域名调整）
   allowedDevOrigins: ['http://127.0.0.1:3000'],
   // 关键：Turbopack 实验性配置
-  experimental: {
-    turbo: {
-      rules: {
-        // 告诉 Turbopack 如何处理 .less 文件
-        '*.less': {
-          // 使用 less-loader 处理 Less
-          loaders: [
-            {
-              loader: 'less-loader',
-              options: {
-                lessOptions: {
-                  javascriptEnabled: true, // 允许 Less 中使用 JS
-                },
+  turbopack: {
+    rules: {
+      // 先处理 CSS 基础规则
+      '*.css': {
+        loaders: [],
+        as: '*.css',
+      },
+      // 再处理 Less 规则（确保顺序正确）
+      '*.less': {
+        loaders: [
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                javascriptEnabled: true,
               },
             },
-          ],
-          // 将处理结果视为 CSS
-          as: '*.css',
-        },
-        // 处理 CSS 结果（如需支持 CSS Modules 可添加此规则）
-        '*.css': {
-          loaders: [],
-          as: '*.css',
-        },
+          },
+        ],
+        as: '*.css', // 明确输出为 CSS 类型
       },
     },
   },

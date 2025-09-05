@@ -182,27 +182,6 @@
       "swcTraceProfiling": false,
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
-      "turbo": {
-        "rules": {
-          "*.less": {
-            "loaders": [
-              {
-                "loader": "less-loader",
-                "options": {
-                  "lessOptions": {
-                    "javascriptEnabled": true
-                  }
-                }
-              }
-            ],
-            "as": "*.css"
-          },
-          "*.css": {
-            "loaders": [],
-            "as": "*.css"
-          }
-        }
-      },
       "typedEnv": false,
       "parallelServerCompiles": false,
       "parallelServerBuildTraces": false,
@@ -313,6 +292,10 @@
     "configFileName": "next.config.ts",
     "turbopack": {
       "rules": {
+        "*.css": {
+          "loaders": [],
+          "as": "*.css"
+        },
         "*.less": {
           "loaders": [
             {
@@ -324,10 +307,6 @@
               }
             }
           ],
-          "as": "*.css"
-        },
-        "*.css": {
-          "loaders": [],
           "as": "*.css"
         }
       },

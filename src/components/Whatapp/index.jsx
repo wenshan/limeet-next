@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Modal, Button, Image } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
-import './index.less';
 
 function Whatapp(props) {
   const [wechatStatus, setWechatStatus] = useState(false);

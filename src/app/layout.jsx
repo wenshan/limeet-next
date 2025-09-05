@@ -3,6 +3,12 @@ import Footer from "@/components/Footer";
 import ICP from '@/components/Icp';
 import normalizeLangCode from '@/utils/langUtils';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@/styles/global.less';
+import "@/styles/theme.less";
+import "@/styles/mixin.less";
+import "@/components/HeaderServer/index.less";
+
 async function RootLayout({ children, params }) {
   const { lang = 'ja-JP', key } = await params;
   const normLang = normalizeLangCode(lang);
