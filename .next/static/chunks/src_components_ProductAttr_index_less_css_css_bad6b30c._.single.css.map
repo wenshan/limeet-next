@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/ProductAttr/index.less.css.css"],"sourcesContent":[".product-attr {\n  margin: 0.625rem auto;\n  clear: both;\n  min-height: 3.125rem;\n  background-color: #fff;\n  padding-left: 0.625rem;\n  padding-right: 0.625rem;\n  padding-top: 0.625rem;\n  padding-bottom: 0.625rem;\n}\n.product-attr ul {\n  width: 100%;\n  clear: both;\n  margin: 0;\n  padding: 0;\n  display: block;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: 0.625rem;\n}\n.product-attr ul li {\n  margin-left: 0;\n  background-color: #fff;\n  overflow: hidden;\n  line-height: 1.125rem;\n  display: block;\n}\n.product-attr ul .name {\n  font-size: 0.875rem;\n  height: 1.125rem;\n  font-weight: 400;\n  padding-right: 0.625rem;\n  text-align: right;\n  width: 6.875rem;\n  display: inline-block;\n}\n.product-attr ul .value {\n  display: inline-block;\n  font-size: 0.875rem;\n  height: 1.125rem;\n  font-weight: 300;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAUA;;;;;;;;;;AAUA;;;;;;;;AAOA;;;;;;;;;;AASA"}}]
+}

@@ -1,10 +1,4 @@
 {
-  "/404/page": "app/404/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/about/[lang]/page": "app/about/[lang]/page.js",
-  "/brand/[lang]/page": "app/brand/[lang]/page.js",
   "/detail/[lang]/[id]/[productId]/page": "app/detail/[lang]/[id]/[productId]/page.js",
-  "/home/[lang]/page": "app/home/[lang]/page.js",
-  "/page": "app/page.js",
-  "/productList/[lang]/[key]/page": "app/productList/[lang]/[key]/page.js"
+  "/home/[lang]/page": "app/home/[lang]/page.js"
 }
