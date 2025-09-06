@@ -2,6 +2,8 @@ import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerSwiperServer from '@/components/BannerSwiperServer';
 import CategoriesServer from '@/components/CategoriesSideServer';
+import Footer from "@/components/Footer";
+import ICP from '@/components/Icp';
 import ListServer from '@/components/ListServer';
 import Title from '@/components/Title';
 import HeaderServer from "@/components/HeaderServer";
@@ -59,6 +61,8 @@ async function HomePage({ params }) {
           </Col>
         </Row>
       </Container>
+      <Footer lang={normLang}></Footer>
+      <ICP lang={normLang}></ICP>
       <ClientRunTimeDom></ClientRunTimeDom>
     </>
   );

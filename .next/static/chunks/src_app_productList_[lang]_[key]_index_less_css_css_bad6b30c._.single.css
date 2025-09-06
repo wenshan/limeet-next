@@ -1,0 +1,40 @@
+/* [project]/src/app/productList/[lang]/[key]/index.less.css.css [app-client] (css) */
+.page {
+  background-color: #efefef;
+}
+
+.tabbar-wrap {
+  z-index: 9999;
+  width: 100%;
+  height: 3.125rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.home-page {
+  color: #444;
+  background: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.product-list-wrap {
+  box-sizing: border-box;
+  width: 100%;
+  margin: .625rem 0;
+  display: flex;
+}
+
+.product-list-wrap .categories-list {
+  background-color: #fff;
+  flex: 0 0 13.125rem;
+  width: 13.125rem;
+}
+
+.product-list-wrap .product-list {
+  flex: auto;
+}
+
+/*# sourceMappingURL=src_app_productList_%5Blang%5D_%5Bkey%5D_index_less_css_css_bad6b30c._.single.css.map*/

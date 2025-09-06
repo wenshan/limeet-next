@@ -1,5 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import CategoriesSideServer from '@/components/CategoriesSideServer';
+import Footer from "@/components/Footer";
+import ICP from '@/components/Icp';
 import List from '@/components/List';
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import normalizeLangCode from '@/utils/langUtils';
@@ -29,6 +31,8 @@ async function ProductList({ params }) {
         </Col>
       </Row>
     </Container>
+    <Footer lang={normLang}></Footer>
+    <ICP lang={normLang}></ICP>
   </>
   );
 };

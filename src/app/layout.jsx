@@ -1,6 +1,4 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
-import Footer from "@/components/Footer";
-import ICP from '@/components/Icp';
 import normalizeLangCode from '@/utils/langUtils';
 import ClientRunTimeDom from "@/components/ClientRunTimeDom";
 
@@ -11,6 +9,7 @@ import "@/styles/mixin.less";
 import "@/components/HeaderServer/index.less";
 
 async function RootLayout({ children, params }) {
+  const props = await params;
   const { lang = 'ja-JP', key } = await params;
   const normLang = normalizeLangCode(lang);
   await initI18nServer();
@@ -49,8 +48,6 @@ async function RootLayout({ children, params }) {
       <body className="root">
         <>
           {children}
-          <Footer lang={normLang}></Footer>
-          <ICP lang={normLang}></ICP>
         </>
         <script src="/Carousel.js" async defer></script>
       </body>

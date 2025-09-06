@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/hou/work/limeet-next/src/components/ClientRunTimeDom/index.jsx"],"sourcesContent":["'use client';\nimport { useEffect } from 'react';\n\n// carousels-detail\nfunction ClientRunTimeDom({ saleSkusList }) {\n  useEffect(() => {\n    if ($) {\n      $('#carousels-banner').Carousels({\n        autoPlay: true,\n        interval: 6000,\n        disableEdgeButtons: false  // 设置为true可在首尾页禁用按钮\n      });\n      if (saleSkusList) {\n        $('#carousels-detail').Carousels({\n          autoPlay: true,\n          interval: 6000,\n          disableEdgeButtons: false,  // 设置为true可在首尾页禁用按钮\n          pageFrom: 'detail',\n          skuItem: saleSkusList,\n        });\n      }\n    }\n  }, [])\n  return null;\n};\n\nexport default ClientRunTimeDom;"],"names":[],"mappings":";;;;AACA;;AADA;;AAGA,mBAAmB;AACnB,SAAS,iBAAiB,KAAgB;QAAhB,EAAE,YAAY,EAAE,GAAhB;;IACxB,IAAA,0KAAS;sCAAC;YACR,IAAI,GAAG;gBACL,EAAE,qBAAqB,SAAS,CAAC;oBAC/B,UAAU;oBACV,UAAU;oBACV,oBAAoB,MAAO,mBAAmB;gBAChD;gBACA,IAAI,cAAc;oBAChB,EAAE,qBAAqB,SAAS,CAAC;wBAC/B,UAAU;wBACV,UAAU;wBACV,oBAAoB;wBACpB,UAAU;wBACV,SAAS;oBACX;gBACF;YACF;QACF;qCAAG,EAAE;IACL,OAAO;AACT;GApBS;KAAA;;uCAsBM","debugId":null}}]
+}

@@ -1,5 +1,6 @@
 import ProductGroup from '@/components/ProductGroup';
-import DetailSwiper from '@/components/DetailSwiper';
+import Footer from "@/components/Footer";
+import ICP from '@/components/Icp';
 import DetailSwiperServer from '@/components/DetailSwiperServer';
 import ProductDetail from '@/components/ProductDetail';
 import ProductAttr from '@/components/ProductAttr';
@@ -72,6 +73,8 @@ async function DetailPage({ params }) {
       <ProductDescribe productDetail={productDetail} />
       <ProductHighlight productDetail={productDetail} />
       <ProductDetail productDetail={productDetail}></ProductDetail>
+      <Footer lang={normLang}></Footer>
+      <ICP lang={normLang}></ICP>
       <ClientRunTimeDom></ClientRunTimeDom>
     </>
   );

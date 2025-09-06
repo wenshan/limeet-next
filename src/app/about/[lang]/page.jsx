@@ -1,8 +1,8 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import { Container, Image } from 'react-bootstrap';
 import Whatapp from '@/components/Whatapp';
-import initMenuServer from '@/constant/menuNavServer';
-import Link from 'next/link';
+import Footer from "@/components/Footer";
+import ICP from '@/components/Icp';
 import normalizeLangCode from '@/utils/langUtils';
 import LocalStorageClient from '@/components/LocalStorageClient';
 import HeaderServer from "@/components/HeaderServer";
@@ -15,8 +15,7 @@ async function About({ params }) {
   const normLang = normalizeLangCode(lang);
   await initI18nServer();
   await i18n.changeLanguage(normLang);
-  const currentPage = 'about'
-
+  const currentPage = 'about';
 
   return (
     <>
@@ -48,6 +47,8 @@ async function About({ params }) {
           </div>
         </div>
       </Container>
+      <Footer lang={normLang}></Footer>
+      <ICP lang={normLang}></ICP>
     </>
   );
 }

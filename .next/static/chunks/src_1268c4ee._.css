@@ -1,0 +1,249 @@
+/* [project]/src/components/ChangeLanguage/index.less.css.css [app-client] (css) */
+.locale {
+  color: #333;
+  text-align: center;
+  border-radius: .3125rem;
+  width: 6.875rem;
+  height: 2.375rem;
+  font-size: .4375rem;
+  line-height: 1.25rem;
+  position: absolute;
+  top: .625rem;
+  right: .625rem;
+}
+
+.locale .dropdown {
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: .3125rem;
+  width: 6.875rem;
+}
+
+.locale .dropdown .dropdown-toggle {
+  color: #333;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.locale .dropdown-menu {
+  opacity: .8;
+  background: #d8d8d8;
+  border: .03125rem solid #fff;
+  min-width: 6.875rem;
+}
+
+.locale ul.lan-list {
+  width: 6.875rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* [project]/src/components/Header/index.less.css.css [app-client] (css) */
+.header-warp {
+  z-index: 9;
+  background-image: url("https://img.limeetpet.com/limeet/banner2tobg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto auto .46875rem;
+  position: relative;
+}
+
+.header-warp .bg-body-tertiary {
+  background: none !important;
+}
+
+.header-warp .mask {
+  z-index: 11;
+  opacity: .5;
+  background-color: #d8d8d8;
+  height: 12.2813rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-warp .arrow-left {
+  z-index: 15;
+  cursor: pointer;
+  background-image: url("https://img.limeetpet.com/limeet/limeethouseaorrw-left.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 1.78125rem;
+  height: 1.78125rem;
+  position: absolute;
+  top: .625rem;
+  left: .625rem;
+}
+
+.header-warp .main {
+  z-index: 13;
+  display: flex;
+  position: absolute;
+  top: 4.375rem;
+  left: 0;
+}
+
+.header-warp .main .des {
+  color: #000;
+  height: 3.125rem;
+  padding-top: .46875rem;
+  padding-left: .3125rem;
+}
+
+.header-warp .main .des a {
+  color: #333;
+}
+
+.header-warp .main .des h1 {
+  text-shadow: 0 .03125rem .0625rem rgba(51, 51, 51, .9);
+  height: 1.25rem;
+  font-size: 1.1875rem;
+  font-weight: 450;
+  line-height: 1.25rem;
+}
+
+.header-warp .main .des h2 {
+  text-shadow: 0 .03125rem .0625rem rgba(51, 51, 51, .9);
+  color: #000;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: .75rem;
+}
+
+.header-warp .main .des h2 img {
+  width: 2.1875rem;
+  padding-right: .3125rem;
+  display: inline-block;
+}
+
+.header-warp .main .des p {
+  text-shadow: 0 .03125rem .03125rem rgba(51, 51, 51, .9);
+  color: #333;
+  font-size: .8125rem;
+  font-weight: 300;
+  line-height: .75rem;
+}
+
+.header-warp .main .des img {
+  width: 1.125rem;
+  padding-right: .3125rem;
+  display: inline-block;
+}
+
+.header-warp .main .logo {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-left: .625rem;
+  padding: .15625rem;
+}
+
+.header-warp .main .logo img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.header-warp .main:hover {
+  opacity: .9;
+}
+
+.header-warp .header {
+  width: 100%;
+  height: 10.9688rem;
+}
+
+.header-warp .nav-sub {
+  z-index: 99;
+  width: 100%;
+  font-weight: 500;
+  position: relative;
+}
+
+.header-warp .nav-sub .mask-sub {
+  opacity: .7;
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 3.5625rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.header-warp .nav-sub ul {
+  z-index: 101;
+  width: 100%;
+  height: 1.3125rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-warp .nav-sub ul li {
+  text-align: center;
+  text-shadow: 0 .03125rem .03125rem rgba(51, 51, 51, .9);
+  cursor: pointer;
+  border-bottom: .0625rem solid #d8d8d8;
+  width: 33%;
+  height: 1.25rem;
+  font-size: .5rem;
+  line-height: 1.25rem;
+}
+
+.header-warp .nav-sub ul li.action {
+  color: #000;
+  border-bottom: .0625rem solid #f6912d;
+  font-weight: 500;
+}
+
+.header-warp .navbar {
+  padding-left: .9375rem;
+}
+
+.header-warp .navbar a.nav-link {
+  cursor: pointer;
+  letter-spacing: .0625rem;
+  padding-left: .78125rem;
+  padding-right: .78125rem;
+  font-weight: bold;
+}
+
+.header-warp .navbar a:hover {
+  color: #f6912d;
+}
+
+.header-warp .navbar a.active {
+  color: #f6912d;
+  font-weight: bold;
+}
+
+.header-warp .navbar .dropdown-item.active, .header-warp .navbar .dropdown-item:active {
+  background-color: #d8d8d8;
+}
+
+/* [project]/src/app/index.less.css.css [app-client] (css) */
+.page {
+  background-color: #efefef;
+}
+
+.tabbar-wrap {
+  z-index: 9999;
+  width: 100%;
+  height: 3.125rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.home-page {
+  color: #444;
+  background: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=src_1268c4ee._.css.map*/

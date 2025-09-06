@@ -8,6 +8,7 @@ import './index.less';
 
 // eslint-disable-next-line @next/next/no-async-client-component
 async function Footer({ lang }) {
+  console.log('lang:', lang);
   const normLang = normalizeLangCode(lang);
   await initI18nServer();
   await i18n.changeLanguage(normLang);
