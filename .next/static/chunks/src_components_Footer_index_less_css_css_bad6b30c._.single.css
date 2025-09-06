@@ -1,0 +1,88 @@
+/* [project]/src/components/Footer/index.less.css.css [app-client] (css) */
+.footer {
+  border-top: .46875rem solid #d2d2d2;
+  margin: .46875rem auto;
+  padding: 1.5625rem;
+}
+
+.footer span.wechat {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+.footer span.wechat img {
+  width: 2.5rem;
+  display: inline;
+}
+
+.footer .flex-column {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .flex-column li {
+  margin: 0;
+  padding-top: .15625rem;
+  padding-bottom: .15625rem;
+  line-height: 1.5rem;
+}
+
+.footer span.youtube {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+.footer span.youtube img {
+  width: 2.5rem;
+  display: inline;
+}
+
+.footer span.facebook {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+.footer span.facebook img {
+  width: 2.5rem;
+  display: inline;
+}
+
+.footer h3.title {
+  padding-top: .625rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.footer .list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .list a {
+  color: #333;
+  padding: .15625rem .15625rem .15625rem 0;
+}
+
+.footer .list a:hover {
+  color: #f6912d !important;
+  text-decoration: underline !important;
+}
+
+.footer .nav a {
+  color: #333;
+  padding: .15625rem .15625rem .15625rem 0;
+}
+
+.footer .nav a:hover {
+  color: #f6912d !important;
+  text-decoration: underline !important;
+}
+
+.footer li.wrap-box {
+  padding-top: .625rem;
+}
+
+/*# sourceMappingURL=src_components_Footer_index_less_css_css_bad6b30c._.single.css.map*/

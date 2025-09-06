@@ -1,0 +1,78 @@
+/* [project]/src/components/CategoriesFooter/index.less.css.css [app-client] (css) */
+.categories-footer {
+  background-color: #fff;
+  margin-top: .46875rem;
+  margin-bottom: .46875rem;
+  padding: .625rem .625rem .3125rem;
+}
+
+.categories-footer .menu {
+  clear: both;
+  padding-top: 0;
+}
+
+.categories-footer .menu .item {
+  background-color: #fff5e2;
+  margin: 0 0 .3125rem;
+  padding: 0 0 0 .9375rem;
+  line-height: 2.03125rem;
+  overflow: hidden;
+}
+
+.categories-footer .menu .item a {
+  color: #333;
+  display: block;
+}
+
+.categories-footer .menu .item .text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.categories-footer .menu .item .arrow-tx-right {
+  vertical-align: middle;
+  float: right;
+  background-image: url("https://img.limeetpet.com/limeet/arrow-right.png");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  width: .75rem;
+  height: .75rem;
+  margin-top: .625rem;
+  margin-right: .625rem;
+}
+
+.categories-footer .menu .item:hover {
+  color: #fff;
+  background-color: #f6912d;
+}
+
+.categories-footer .menu .item:hover a:hover {
+  color: #fff;
+}
+
+.categories-footer .menu .item:hover .arrow-tx-right {
+  background-image: url("https://img.limeetpet.com/limeet/arrow-right2.png");
+}
+
+.categories-footer .describe {
+  margin: 0 auto;
+  padding: .625rem;
+}
+
+.categories-footer .describe p {
+  padding: .3125rem .625rem;
+}
+
+.categories-footer .describe p img {
+  width: 1.25rem;
+  padding-right: .15625rem;
+  display: inline-block;
+}
+
+.categories-footer .describe a {
+  color: #f6912d;
+  padding-left: .625rem;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=src_components_CategoriesFooter_index_less_css_css_bad6b30c._.single.css.map*/

@@ -1,5 +1,6 @@
 import ProductGroup from '@/components/ProductGroup';
 import DetailSwiper from '@/components/DetailSwiper';
+import DetailSwiperServer from '@/components/DetailSwiperServer';
 import ProductDetail from '@/components/ProductDetail';
 import ProductAttr from '@/components/ProductAttr';
 import ProductHighlight from '@/components/ProductHighlight';
@@ -8,6 +9,7 @@ import LocalStorageClient from '@/components/LocalStorageClient';
 import normalizeLangCode from '@/utils/langUtils';
 import { productDetailServer } from '@/services/index';
 import { notFound } from 'next/navigation';
+import ClientRunTimeDom from '@/components/ClientRunTimeDom';
 
 import './index.less';
 
@@ -17,6 +19,7 @@ export async function generateMetadata({ params }) {
   const language = lang;
   if (id && productId && lang) {
     const result = await productDetailServer({ id, product_id: productId, projectId, language });
+    console.log('result13:', result);
     if (result && result.status === 200 && result.data) {
       return {
         title: result.data.title,
@@ -63,12 +66,13 @@ async function DetailPage({ params }) {
   return (
     <>
       <LocalStorageClient lang={normLang} productDetail={productDetail}></LocalStorageClient>
-      <DetailSwiper from="detail"></DetailSwiper>
+      <DetailSwiperServer productDetail={productDetail}></DetailSwiperServer>
       {false && (<ProductGroup></ProductGroup>)}
       <ProductAttr productDetail={productDetail}></ProductAttr>
       <ProductDescribe productDetail={productDetail} />
       <ProductHighlight productDetail={productDetail} />
       <ProductDetail productDetail={productDetail}></ProductDetail>
+      <ClientRunTimeDom></ClientRunTimeDom>
     </>
   );
 }

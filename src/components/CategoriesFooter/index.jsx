@@ -1,12 +1,29 @@
-'use client';
-import { useEffect } from 'react';
-import { Nav } from 'react-bootstrap';
-import RootStore from '@/stores/rootStore';
+
+import { queryProductCategoriesServer } from '@/services/index';
+import allCategoriesInit from '@/constant/allCategoriesInit';
 
 import './index.less';
 
-function CategoriesFooter({ lang }) {
-  const { categories, language, getCategoriesFetch } = RootStore();
+const getCategoriesFetchServer = async ({ lang }) => {
+  const projectId = 1747727677;
+  const language = lang || 'ja-JP';
+  try {
+    const result = await queryProductCategoriesServer({ projectId, language });
+    if (result && result.status && result.status === 200 && result.data.rows && result.data.rows[0]) {
+      const allCategories = Object.assign({}, allCategoriesInit[language]);
+      result.data.rows.push(allCategories);
+      return result.data.rows;
+    } else {
+      return [];
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function CategoriesFooter(props) {
+  const { lang } = props;
+  const categories = await getCategoriesFetchServer({ lang });
   const renderHtml = () => {
     const html = [];
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
@@ -15,16 +32,13 @@ function CategoriesFooter({ lang }) {
       categories.map((item) => {
         if (item && item.key) {
           html.push(
-            <li key={item.key}><a href={`/productList/${language}/${item.key}`}>{item.title}</a></li>
+            <li key={item.key}><a href={`/productList/${lang}/${item.key}`}>{item.title}</a></li>
           );
         }
 
       });
     return html;
   };
-  useEffect(() => {
-    getCategoriesFetch('all');
-  }, []);
   return (
     <ul className='flex-column'>{renderHtml()}</ul>
   );

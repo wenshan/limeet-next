@@ -1,5 +1,6 @@
-import { Carousel, Container, Image } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 import { getBannerServer } from '@/services/index';
+
 
 import './index.less';
 
@@ -8,7 +9,7 @@ const whereParamsBanner = {
   type: 'home'
 };
 
-const getBannerFetch = async ({ lang }) => {
+const getBannerFetchServer = async ({ lang }) => {
   const projectId = 1747727677;
   const language = lang;
   try {
@@ -24,7 +25,7 @@ const getBannerFetch = async ({ lang }) => {
 };
 
 async function BannerSwiperServer({ lang }) {
-  const swiperBanner = await getBannerFetch({ lang });
+  const swiperBanner = await getBannerFetchServer({ lang });
   const renderSwiperHtml = () => {
     const html = [];
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
@@ -33,10 +34,25 @@ async function BannerSwiperServer({ lang }) {
       swiperBanner.map((item, idx) => {
         if (item.is_show && item.src) {
           html.push(
-            <Carousel.Item key={idx} title={item.name}>
+            <div className="carousels-item" key={idx} title={item.name}>
               <a href={item.url} target='_blank' title={item.name} ><Image src={item.src} fluid /> </a>
-            </Carousel.Item>
+            </div>
           );
+        }
+      });
+    return html;
+  };
+  const renderIndicatorHtml = () => {
+    const html = [];
+    swiperBanner &&
+      swiperBanner.length &&
+      swiperBanner.map((item, idx) => {
+        if (item.is_show && item.src) {
+          if (idx === 0) {
+            html.push(<div className="indicator active" data-index={idx} key={`${item.name}_${idx}`}></div>);
+          } else {
+            html.push(<div className="indicator" data-index={idx} key={`${item.name}_${idx}`}></div>);
+          }
         }
       });
     return html;
@@ -44,9 +60,18 @@ async function BannerSwiperServer({ lang }) {
 
   return (
     <Container fluid className='banner-swiper'>
-      <Carousel data-bs-theme='dark' interval={3000}>
-        {renderSwiperHtml()}
-      </Carousel>
+      <div id="carousels-banner" className="carousels-container">
+        <div className="carousels">
+          <div className="carousels-inner">
+            {renderSwiperHtml()}
+          </div>
+          <div className="carousels-indicators">
+            {renderIndicatorHtml()}
+          </div>
+          <div className="carousels-control control-prev">←</div>
+          <div className="carousels-control control-next">→</div>
+        </div>
+      </div>
     </Container>
   );
 }

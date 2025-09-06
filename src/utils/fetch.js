@@ -18,10 +18,9 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
     withCredentials: false,
     // 调试配置
     debug: {
-      // enabled: process.env.NODE_ENV === 'development', // 开发环境默认开启
-      enabled: false,
-      logRequest: false, // 打印请求详情
-      logResponse: false, // 打印响应详情
+      enabled: process.env.NODE_ENV === 'development', // 开发环境默认开启
+      logRequest: true, // 打印请求详情
+      logResponse: true, // 打印响应详情
       logCache: false, // 打印缓存状态
       logLocalStorage: false // 打印localStorage操作
     },

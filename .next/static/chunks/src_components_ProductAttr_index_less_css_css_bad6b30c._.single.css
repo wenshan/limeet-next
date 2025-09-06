@@ -1,0 +1,45 @@
+/* [project]/src/components/ProductAttr/index.less.css.css [app-client] (css) */
+.product-attr {
+  clear: both;
+  background-color: #fff;
+  min-height: 3.125rem;
+  margin: .625rem auto;
+  padding: .625rem;
+}
+
+.product-attr ul {
+  clear: both;
+  flex-flow: wrap;
+  gap: .625rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.product-attr ul li {
+  background-color: #fff;
+  margin-left: 0;
+  line-height: 1.125rem;
+  display: block;
+  overflow: hidden;
+}
+
+.product-attr ul .name {
+  text-align: right;
+  width: 6.875rem;
+  height: 1.125rem;
+  padding-right: .625rem;
+  font-size: .875rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.product-attr ul .value {
+  height: 1.125rem;
+  font-size: .875rem;
+  font-weight: 300;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=src_components_ProductAttr_index_less_css_css_bad6b30c._.single.css.map*/

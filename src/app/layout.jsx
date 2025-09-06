@@ -2,6 +2,7 @@ import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import Footer from "@/components/Footer";
 import ICP from '@/components/Icp';
 import normalizeLangCode from '@/utils/langUtils';
+import ClientRunTimeDom from "@/components/ClientRunTimeDom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/global.less';
@@ -43,6 +44,7 @@ async function RootLayout({ children, params }) {
         <link rel="alternate" hrefLang="ja-JP" href="https://www.limeetpet.com/ja-JP" />
         <link rel="alternate" hrefLang="en-US" href="https://www.limeetpet.com/en-US" />
         <link rel="alternate" hrefLang="zh-CN" href="https://www.limeetpet.com/zh-CN" />
+        <script src="https://img.limeetpet.com/zepto.min.js"></script>
       </head>
       <body className="root">
         <>
@@ -50,7 +52,9 @@ async function RootLayout({ children, params }) {
           <Footer lang={normLang}></Footer>
           <ICP lang={normLang}></ICP>
         </>
+        <script src="/Carousel.js" async defer></script>
       </body>
+
     </html>
   );
 }

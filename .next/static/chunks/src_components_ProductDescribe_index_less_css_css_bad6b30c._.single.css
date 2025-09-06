@@ -1,0 +1,15 @@
+/* [project]/src/components/ProductDescribe/index.less.css.css [app-client] (css) */
+.product-describe {
+  clear: both;
+  background-color: #fff;
+  min-height: 3.125rem;
+  margin: 0 auto;
+  padding: .625rem;
+  font-size: .875rem;
+}
+
+.product-describe p {
+  line-height: 1.5rem;
+}
+
+/*# sourceMappingURL=src_components_ProductDescribe_index_less_css_css_bad6b30c._.single.css.map*/

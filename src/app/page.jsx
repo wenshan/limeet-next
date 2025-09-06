@@ -1,6 +1,6 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import { Container, Row, Col } from 'react-bootstrap';
-import BannerSwiper from '@/components/BannerSwiper';
+import BannerSwiperServer from '@/components/BannerSwiperServer';
 import CategoriesServer from '@/components/CategoriesSideServer';
 import ListServer from '@/components/ListServer';
 import Title from '@/components/Title';
@@ -8,6 +8,7 @@ import HeaderServer from "@/components/HeaderServer";
 import Link from 'next/link';
 import normalizeLangCode from '@/utils/langUtils';
 import LocalStorageClient from '@/components/LocalStorageClient';
+import ClientRunTimeDom from '@/components/ClientRunTimeDom';
 import { getBannerServer } from '@/services/index';
 
 import './index.less';
@@ -45,7 +46,7 @@ async function HomePage({ params }) {
     <>
       <LocalStorageClient lang={normLang} swiperBanner={swiperBanner}></LocalStorageClient>
       <HeaderServer lang={normLang} currentPage={currentPage} c_key={key}></HeaderServer>
-      <BannerSwiper></BannerSwiper>
+      <BannerSwiperServer lang={normLang} ></BannerSwiperServer>
       <CategoriesServer lang={lang} c_key={initKey}></CategoriesServer>
       <Container fluid className='list-wrap'>
         <Title title={i18n.t('common.title.sales')} />
@@ -58,6 +59,7 @@ async function HomePage({ params }) {
           </Col>
         </Row>
       </Container>
+      <ClientRunTimeDom></ClientRunTimeDom>
     </>
   );
 }
