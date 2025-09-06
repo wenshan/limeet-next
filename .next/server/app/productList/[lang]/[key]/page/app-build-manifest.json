@@ -1,15 +1,15 @@
 {
   "pages": {
     "/productList/[lang]/[key]/page": [
-      "static/chunks/19f8812d746b0dc0.js",
-      "static/chunks/55cd3b4b0587e63a.js",
-      "static/chunks/498740de07a34d3f.js",
+      "static/chunks/86e9d05d9b4f2fd7.js",
+      "static/chunks/b75d19c3e45241dc.js",
+      "static/chunks/817fb27f6df03939.js",
       "static/chunks/7dd66bdf8a7e5707.js",
       "static/chunks/5c83da848c6f22b3.css",
       "static/chunks/443ea771bc4a0a4d.css",
       "static/chunks/d0d84d0ed894721a.css",
       "static/chunks/332df174fd7d10cf.css",
-      "static/chunks/d888edc783c18370.js",
+      "static/chunks/d45c8c1c05590bd6.js",
       "static/chunks/3e6a94f1b90fb046.js",
       "static/chunks/1a0acb20c33bd060.js",
       "static/chunks/c2b338045f9db456.js",

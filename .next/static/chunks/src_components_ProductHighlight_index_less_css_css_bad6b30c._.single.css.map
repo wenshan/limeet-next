@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/ProductHighlight/index.less.css.css"],"sourcesContent":[".product-highlight {\n  margin: 0 auto;\n  clear: both;\n  min-height: 3.125rem;\n  background-color: #fff;\n  padding-left: 0.625rem;\n  padding-right: 0.625rem;\n  padding-top: 0.625rem;\n  padding-bottom: 0.625rem;\n}\n.product-highlight p {\n  font-size: 0.875rem;\n  line-height: 1.5rem;\n}\n.product-highlight ul,\n.product-highlight li {\n  list-style-type: disc;\n  padding-bottom: 0.3125rem;\n  padding-top: 0.3125rem;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAUA;;;;;AAIA"}}]
-}
