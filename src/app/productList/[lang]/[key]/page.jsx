@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import CategoriesSideServer from '@/components/CategoriesSideServer';
 import Footer from "@/components/Footer";
 import ICP from '@/components/Icp';
-import List from '@/components/List';
+import ListServer from '@/components/ListServer';
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import normalizeLangCode from '@/utils/langUtils';
 import LocalStorageClient from '@/components/LocalStorageClient';
@@ -27,7 +27,7 @@ async function ProductList({ params }) {
           <CategoriesSideServer lang={normLang} c_key={key}></CategoriesSideServer>
         </Col>
         <Col>
-          <List lang={normLang}></List>
+          <ListServer from="productList" lang={normLang} c_key={key}></ListServer>
         </Col>
       </Row>
     </Container>
