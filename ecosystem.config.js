@@ -3,7 +3,7 @@ module.exports = {
     name: 'limeet-next', // 应用名称
     script: 'node_modules/next/dist/bin/next', // Next.js 启动脚本
     args: 'start', // 启动命令（生产环境用 start）
-    instances: 'max', // 启动实例数：'max' 表示根据 CPU 核心数自动分配
+    instances: 1, // 只启动 1 个实例
     exec_mode: 'fork', // 单实例模式
     env: {
       PORT: 3000, // 端口号
