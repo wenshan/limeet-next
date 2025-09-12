@@ -1,6 +1,5 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import normalizeLangCode from '@/utils/langUtils';
-import ClientRunTimeDom from "@/components/ClientRunTimeDom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/global.less';
@@ -43,13 +42,11 @@ async function RootLayout({ children, params }) {
         <link rel="alternate" hrefLang="ja-JP" href="https://www.limeetpet.com/ja-JP" />
         <link rel="alternate" hrefLang="en-US" href="https://www.limeetpet.com/en-US" />
         <link rel="alternate" hrefLang="zh-CN" href="https://www.limeetpet.com/zh-CN" />
-        <script src="https://img.limeetpet.com/zepto.min.js"></script>
+        <script src="https://img.limeetpet.com/zepto.min.js" defer></script>
       </head>
       <body className="root">
-        <>
-          {children}
-        </>
-        <script src="/Carousel.js" async defer></script>
+        {children}
+        <script src="/Carousel.js" defer></script>
       </body>
 
     </html>
