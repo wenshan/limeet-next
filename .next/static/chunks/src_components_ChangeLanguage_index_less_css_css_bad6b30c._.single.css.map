@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/ChangeLanguage/index.less.css.css"],"sourcesContent":[".locale {\n  width: 6.875rem;\n  height: 2.375rem;\n  position: absolute;\n  top: 0.625rem;\n  right: 0.625rem;\n  font-size: 0.4375rem;\n  line-height: 1.25rem;\n  border-radius: 0.3125rem;\n  color: #333;\n  text-align: center;\n}\n.locale .dropdown {\n  width: 6.875rem;\n  background-color: rgba(255, 255, 255, 0.6);\n  border-radius: 0.3125rem;\n}\n.locale .dropdown .dropdown-toggle {\n  width: 100%;\n  background: transparent;\n  border: none;\n  color: #333;\n}\n.locale .dropdown-menu {\n  min-width: 6.875rem;\n  background: none;\n  background-color: #d8d8d8;\n  border: 0.03125rem solid #fff;\n  opacity: 0.8;\n}\n.locale ul.lan-list {\n  padding: 0;\n  margin: 0 auto;\n  width: 6.875rem;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;AAYA;;;;;;AAKA;;;;;;;AAMA;;;;;;;AAOA"}}]
-}

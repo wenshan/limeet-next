@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/productList/[lang]/[key]/index.less.css.css"],"sourcesContent":[".page {\n  background-color: #EFEFEF;\n}\n.tabbar-wrap {\n  height: 3.125rem;\n  position: fixed;\n  bottom: 0;\n  /* 距离底部为0像素 */\n  left: 0;\n  /* 左侧与视口边界对齐 */\n  width: 100%;\n  /* 宽度等于视口宽度 */\n  z-index: 9999;\n}\n.home-page {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  background: transparent;\n  color: #444;\n}\n.product-list-wrap {\n  width: 100%;\n  display: flex;\n  margin: 0.625rem 0;\n  box-sizing: border-box;\n}\n.product-list-wrap .categories-list {\n  width: 13.125rem;\n  flex: 0 0 13.125rem;\n  background-color: #fff;\n}\n.product-list-wrap .product-list {\n  flex: auto;\n}\n"],"names":[],"mappings":"AAAA;;;;AAGA;;;;;;;;;AAWA;;;;;;;;AAOA;;;;;;;AAMA;;;;;;AAKA"}}]
-}

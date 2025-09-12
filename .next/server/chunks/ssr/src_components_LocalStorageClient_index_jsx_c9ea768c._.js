@@ -1,3 +1,0 @@
-module.exports=[9056,a=>{"use strict";a.s(["default",()=>e]);var b=a.i(72131),c=a.i(74971),d=a.i(22066);let e=function({lang:a,swiperBanner:e,productDetail:f,c_key:g,categories:h,productList:i}){let{setLanguage:j,setSwiperBanner:k,setProductDetail:l,setCategories:m,setProductTypeId:n,setProductList:o}=(0,d.default)();return(0,b.useEffect)(()=>{e&&k(e),a&&(j(a),c.default.set("lang",a),c.default.set("i18nextLng",a)),h&&m(h),g&&n(g),i&&o(i),f&&f.saleSkusList&&f.saleSkusList[0]&&l(f)},[a]),null}}];
-
-//# sourceMappingURL=src_components_LocalStorageClient_index_jsx_c9ea768c._.js.map
