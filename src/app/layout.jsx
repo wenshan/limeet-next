@@ -46,7 +46,7 @@ async function RootLayout({ children, params }) {
       </head>
       <body className="root">
         {children}
-        <script src="/Carousel.js" defer></script>
+        <script src="https://img.limeetpet.com/limeet/carousel.js" defer></script>
       </body>
 
     </html>
