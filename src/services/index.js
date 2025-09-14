@@ -17,16 +17,7 @@ export const getBanner = (params) =>
       }
     }
   });
-export const getBannerServer = (params) =>
-  fetchData('api/web/banner/query', {
-    method: 'POST',
-    body: JSON.stringify(params),
-    config: {
-      server: true, // 服务器端请求（安全提交）
-      cache: 'no-store', // 提交数据不缓存
-      errorMessage: '获取数据失败'
-    }
-  });
+
 // http://wiki.tools.msparis.com/pages/viewpage.action?pageId=2130801
 export const queryProductList = (params = {}) =>
   fetchData('api/web/product/queryProductList', {
@@ -34,17 +25,6 @@ export const queryProductList = (params = {}) =>
     body: JSON.stringify(params),
     config: {
       server: false, // 服务器端请求（安全提交）
-      cache: 'no-store', // 提交数据不缓存
-      errorMessage: '获取数据失败'
-    }
-  });
-  // http://wiki.tools.msparis.com/pages/viewpage.action?pageId=2130801
-export const queryProductListServer = (params = {}) =>
-  fetchData('api/web/product/queryProductList', {
-    method: 'POST',
-    body: JSON.stringify(params),
-    config: {
-      server: true, // 服务器端请求（安全提交）
       cache: 'no-store', // 提交数据不缓存
       errorMessage: '获取数据失败'
     }
@@ -61,16 +41,7 @@ export const queryProductCategories = (params) =>
       errorMessage: '获取数据失败'
     }
   });
-export const queryProductCategoriesServer = (params) =>
-  fetchData('api/web/product/queryProductCategories', {
-    method: 'POST',
-    body: JSON.stringify(params),
-    config: {
-      server: true, // 服务器端请求（安全提交）
-      cache: 'no-store', // 提交数据不缓存
-      errorMessage: '获取数据失败'
-    }
-  });
+
 export const productDetail = (params) =>
   fetchData('api/web/product/productDetail', {
     method: 'POST',
@@ -92,16 +63,9 @@ export const queryProductGroup = (params) =>
       errorMessage: '获取数据失败'
     }
   });
-  export const productDetailServer = (params) =>
-  fetchData('api/web/product/productDetail', {
-    method: 'POST',
-    body: JSON.stringify(params),
-    config: {
-      server: true, // 服务器端请求（安全提交）
-      cache: 'no-store', // 提交数据不缓存
-      errorMessage: '获取数据失败'
-    }
-  });
+
+
+/**** ================== server api  start ============ */
 // 相关组
 export const queryProductGroupServer = (params) =>
   fetchData('api/web/product/queryProductGroup', {
@@ -113,3 +77,46 @@ export const queryProductGroupServer = (params) =>
       errorMessage: '获取数据失败'
     }
   });
+export const productDetailServer = (params) =>
+  fetchData('api/web/product/productDetail', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+export const queryProductCategoriesServer = (params) =>
+  fetchData('api/web/product/queryProductCategories', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+// http://wiki.tools.msparis.com/pages/viewpage.action?pageId=2130801
+export const queryProductListServer = (params = {}) =>
+  fetchData('api/web/product/queryProductList', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+
+export const getBannerServer = (params) =>
+  fetchData('api/web/banner/query', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
+  /**** ================== server api  end ============ */
