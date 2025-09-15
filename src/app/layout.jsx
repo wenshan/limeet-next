@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import normalizeLangCode from '@/utils/langUtils';
 import GoogleGaRun from '@/components/GoogleGaRun';
@@ -44,7 +45,9 @@ async function RootLayout({ children, params }) {
         <link rel="alternate" hrefLang="en-US" href="https://www.limeetpet.com/en-US" />
         <link rel="alternate" hrefLang="zh-CN" href="https://www.limeetpet.com/zh-CN" />
         <script src="https://img.limeetpet.com/zepto.min.js" defer></script>
-        <GoogleGaRun></GoogleGaRun>
+        <Suspense fallback={<p>loading...</p>}>
+          <GoogleGaRun></GoogleGaRun>
+        </Suspense>
       </head>
       <body className="root">
         {children}

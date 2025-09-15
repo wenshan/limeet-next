@@ -242,8 +242,6 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
 
       // 新增404状态处理
       if (response.status === 404) {
-        // 对于App Router使用notFound()触发404页面
-        // 对于Pages Router可使用router.push('/404')
         notFound();
       }
 
