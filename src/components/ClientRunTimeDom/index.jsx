@@ -1,6 +1,5 @@
 'use client';
 import { useEffect } from 'react';
-import { initializeGa, trackPageView, trackEvent } from '@/utils/ga';
 
 // carousels-detail
 function ClientRunTimeDom({ saleSkusList }) {
@@ -24,9 +23,9 @@ function ClientRunTimeDom({ saleSkusList }) {
       $('#buy-target').on('click', function () {
         const $this = $(this);
         const detail = $this.data('detail');
-        console.log('GA detail:', detail);
-        if (trackEvent && detail && detail.projectId) {
-          trackEvent('detail_buy_click', {
+        // console.log('GA detail:', detail);
+        if (window.gtag && gtag && detail && detail.projectId) {
+          window.gtag('event', 'detail_buy_click', {
             'language': detail.language,
             'title': detail.title,
             'offer_id': detail.offer_id,

@@ -87,24 +87,6 @@ async function DetailSwiperServer({ productDetail }) {
     return cardHtml;
   };
 
-  const gtagEvent = (data) => {
-    if (window.gtag && gtag && data && data.projectId && data.offer_id && currentSaleSku) {
-      gtag('event', 'detail_buy_click', {
-        'language': data.language,
-        'title': data.title,
-        'offer_id': data.offer_id,
-        'product_id': data.product_id,
-        'product_main_id': data.product_main_id,
-        'projectId': data.projectId,
-        'saleType': currentSaleSku.saleType,
-        'saleValue': currentSaleSku.saleValue,
-        'sale_price': currentSaleSku.sale_price,
-        'monetary_unit': currentSaleSku.monetary_unit,
-        'discount': currentSaleSku.discount,
-        'price': currentSaleSku.price,
-      });
-    }
-  };
   const buyLink = () => {
     let html = '';
     const currentProductDetailJson = JSON.stringify(currentProductDetail);
