@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/about/[lang]/page": "/about/[lang]",
+  "/brand/[lang]/page": "/brand/[lang]",
+  "/detail/[lang]/[id]/[productId]/page": "/detail/[lang]/[id]/[productId]",
+  "/home/[lang]/page": "/home/[lang]",
+  "/page": "/",
+  "/productList/[lang]/[key]/page": "/productList/[lang]/[key]"
+}

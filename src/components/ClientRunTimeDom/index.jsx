@@ -42,7 +42,7 @@ function ClientRunTimeDom({ saleSkusList }) {
         }
       });
     };
-    const timerId = setTimeout(delayFunction, 1000);
+    const timerId = setTimeout(delayFunction, 3000);
     return () => {
       clearTimeout(timerId);
     };
