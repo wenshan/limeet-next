@@ -79,7 +79,7 @@ async function HeaderServer({ lang, currentPage, c_key }) {
           <div className='main'>
             <div className='logo'>
               <Link href='/'>
-                <img src='https://img.limeetpet.com/limeet/limeet_logo.png' alt="Limeet Pet Brand" />
+                <img src='/limeet_logo.png' alt="Limeet Pet Brand" />
               </Link>
             </div>
             <div className='des'>
