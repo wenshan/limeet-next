@@ -4,6 +4,6 @@ module.exports=[72123,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(11857);a.n(d(
                 margin: 0;
                 padding: 0;
               }
-            `}),(0,b.jsx)("link",{rel:"preload",href:"https://img.limeetpet.com/limeet/limeet_logo.png",as:"image",type:"image/png"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"ja-JP",href:"https://www.limeetpet.com/"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"ja-JP",href:"https://www.limeetpet.com/ja-JP"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"en-US",href:"https://www.limeetpet.com/en-US"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"zh-CN",href:"https://www.limeetpet.com/zh-CN"}),(0,b.jsx)(f.GoogleAnalytics,{gaId:"G-6N01WX01MW"})]}),(0,b.jsxs)("body",{className:"root",children:[a,(0,b.jsx)(e.default,{src:"/carousel.js",strategy:"lazyOnload",id:"carousel"})]})]})}}];
+            `}),(0,b.jsx)("link",{rel:"preload",href:"/limeet_logo.png",as:"image",type:"image/png"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"ja-JP",href:"https://www.limeetpet.com/"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"ja-JP",href:"https://www.limeetpet.com/ja-JP"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"en-US",href:"https://www.limeetpet.com/en-US"}),(0,b.jsx)("link",{rel:"alternate",hrefLang:"zh-CN",href:"https://www.limeetpet.com/zh-CN"}),(0,b.jsx)(f.GoogleAnalytics,{gaId:"G-6N01WX01MW"})]}),(0,b.jsxs)("body",{className:"root",children:[a,(0,b.jsx)(e.default,{src:"/carousel.js",strategy:"lazyOnload",id:"carousel"})]})]})}}];
 
 //# sourceMappingURL=_16e3f93a._.js.map

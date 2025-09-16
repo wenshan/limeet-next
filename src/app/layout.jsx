@@ -37,7 +37,7 @@ async function RootLayout({ children, params }) {
         </style>
         <link
           rel="preload"
-          href="https://img.limeetpet.com/limeet/limeet_logo.png"
+          href="/limeet_logo.png"
           as="image"
           type="image/png"
         />
