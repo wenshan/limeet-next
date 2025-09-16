@@ -1,5 +1,6 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import normalizeLangCode from '@/utils/langUtils';
+import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,6 +18,7 @@ async function RootLayout({ children, params }) {
   return (
     <html lang={normLang}>
       <head>
+        <Script src="/zepto.min.js" strategy="beforeInteractive" id="zepto" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="format-detection" content="telephone=no, email=no" />
@@ -43,12 +45,11 @@ async function RootLayout({ children, params }) {
         <link rel="alternate" hrefLang="ja-JP" href="https://www.limeetpet.com/ja-JP" />
         <link rel="alternate" hrefLang="en-US" href="https://www.limeetpet.com/en-US" />
         <link rel="alternate" hrefLang="zh-CN" href="https://www.limeetpet.com/zh-CN" />
-        <script src="https://img.limeetpet.com/zepto.min.js" defer></script>
         <GoogleAnalytics gaId="G-6N01WX01MW"></GoogleAnalytics>
       </head>
       <body className="root">
         {children}
-        <script src="https://img.limeetpet.com/limeet/carousel.js" defer></script>
+        <Script src="/carousel.js" strategy="lazyOnload" id="carousel" />
       </body>
 
     </html>

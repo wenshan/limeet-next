@@ -31,6 +31,7 @@
     "react-i18next": "^15.7.2",
     "store2": "^2.14.4",
     "style-loader": "^4.0.0",
+    "zepto": "^1.2.0",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
