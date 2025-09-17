@@ -8,6 +8,7 @@
     "dev3": "DEBUG=next:middleware npm run dev",
     "build": "next build --turbopack",
     "start": "next start",
+    "sitemap": "node scripts/generate-sitemap.js",
     "lint": "eslint"
   },
   "dependencies": {
@@ -45,6 +46,7 @@
     "less": "^4.4.1",
     "less-loader": "^12.3.0",
     "postcss-pxtorem": "^6.1.0",
+    "sitemap": "^8.0.0",
     "typescript": "^5"
   }
 }

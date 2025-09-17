@@ -119,4 +119,15 @@ export const getBannerServer = (params) =>
       errorMessage: '获取数据失败'
     }
   });
+
+  export const getSitemapServer = (params) =>
+  fetchData('api/web/product/sitemap', {
+    method: 'POST',
+    body: JSON.stringify(params),
+    config: {
+      server: true, // 服务器端请求（安全提交）
+      cache: 'no-store', // 提交数据不缓存
+      errorMessage: '获取数据失败'
+    }
+  });
   /**** ================== server api  end ============ */

@@ -1,241 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://www.limeetpet.com</loc>
-    <xhtml:link
-               rel="alternate"
-               hreflang="en-US"
-               href="https://www.limeetpet.com/home/en-US"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ja-JP"
-               href="https://www.limeetpet.com/home/ja-JP"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="ja-JP"
-               href="https://www.limeetpet.com"/>
-    <xhtml:link
-               rel="alternate"
-               hreflang="zh-CN"
-               href="https://www.limeetpet.com/home/zh-CN"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.limeetpet.com/productList/ja-JP/all</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/productList/ja-JP/all"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/productList/en-US/all"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/productList/zh-CN/all"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>daily</changefreq> 
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.limeetpet.com/productList/ja-JP/33381771</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/productList/ja-JP/33381771"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/productList/en-US/33381771"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/productList/zh-CN/33381771"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.limeetpet.com/productList/ja-JP/12771663</loc>
-        <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/productList/ja-JP/12771663"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/productList/en-US/12771663"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/productList/zh-CN/12771663"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.limeetpet.com/productList/ja-JP/97974047</loc>
-        <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/productList/ja-JP/97974047"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/productList/en-US/97974047"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/productList/zh-CN/97974047"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.limeetpet.com/brand/ja-JP</loc>
-            <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/brand/ja-JP"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/brand/en-US"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/brand/zh-CN"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.limeetpet.com/about/ja-JP</loc>
-                <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/about/ja-JP"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/about/en-US"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/about/zh-CN"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq> 
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://limeetpet.com/detail/ja-JP/417/40100550</loc>
-                    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/detail/ja-JP/417/40100550"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/detail/en-US/417/40100550"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/detail/zh-CN/417/40100550"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://limeetpet.com/detail/ja-JP/416/70500845</loc>
-                    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/detail/ja-JP/416/70500845"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/detail/en-US/416/70500845"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/detail/zh-CN/416/70500845"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://limeetpet.com/detail/ja-JP/26/03323129</loc>
-                    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/detail/ja-JP/26/03323129"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/detail/en-US/26/03323129"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/detail/zh-CN/26/03323129"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://limeetpet.com/detail/ja-JP/15/91744444</loc>
-                    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/detail/ja-JP/15/91744444"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/detail/en-US/15/91744444"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/detail/zh-CN/15/91744444"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://limeetpet.com/detail/ja-JP/16/14237222</loc>
-                    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/detail/ja-JP/16/14237222"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/detail/en-US/16/14237222"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/detail/zh-CN/16/14237222"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-    <url>
-    <loc>https://limeetpet.com/detail/ja-JP/20/12445147</loc>
-                    <xhtml:link
-      rel="alternate"
-      hreflang="ja-JP"
-      href="https://www.limeetpet.com/detail/ja-JP/20/12445147"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en-US"
-      href="https://www.limeetpet.com/detail/en-US/20/12445147"/>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-CN"
-      href="https://www.limeetpet.com/detail/zh-CN/20/12445147"/>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+	xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url>
+		<loc>https://limeetpet.com/</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/home/ja-JP</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/home/zh-CN"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/home/en-US"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/home/ja-JP"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://limeetpet.com/home/ja-JP"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/brand/ja-JP</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/brand/zh-CN"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/brand/en-US"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/brand/ja-JP"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://limeetpet.com/brand/ja-JP"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/about/ja-JP</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/about/zh-CN"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/about/en-US"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/about/ja-JP"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://limeetpet.com/about/ja-JP"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja-JP/all</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/all"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/all"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/all"/>
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://limeetpet.com/productList/ja-JP/all"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/33381771</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/33381771"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/33381771"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/33381771"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/12771663</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/12771663"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/12771663"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/12771663"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/97974047</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/97974047"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/97974047"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/97974047"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/18885882</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/18885882"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/18885882"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/18885882"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/54155552</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/54155552"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/54155552"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/54155552"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/4804577</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/4804577"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/4804577"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/4804577"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/productList/ja_JP/57722311</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/57722311"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/57722311"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/57722311"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/1/22227170</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/1/22227170"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/14/91744711"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/27/12771663"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/2/12242811</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/2/12242811"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/15/91744444"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/28/16631727"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/3/12541219</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/3/12541219"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/22/16536367"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/29/11924186"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/13/42349963</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/13/42349963"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/26/03323129"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/8/25579047</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/8/25579047"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/16/14237222"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/30/21717747"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/9/25579663</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/9/25579663"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/17/13824339"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/31/84831082"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/5/30744462</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/5/30744462"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/23/46242697"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/32/3417011"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/zh-CN/39/39311760</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/39/39311760"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/6/55745338</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/6/55745338"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/19/4743430"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/34/11499833"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/7/25579544</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/7/25579544"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/20/12445147"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/33/21911491"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/10/25579637</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/10/25579637"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/21/34745283"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/35/76617775"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/en-US/12/26037889</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/12/26037889"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/25/34340663"/>
+		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/detail/zh-CN/38/77339776"/>
+		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/detail/en-US/40/26037869"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/ja-JP/416/70500845</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/416/70500845"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/ja-JP/417/40100550</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/417/40100550"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/ja-JP/418/78787174</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/418/78787174"/>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/420/17985755"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/ja-JP/419/44728544</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/419/44728544"/>
+	</url>
+	<url>
+		<loc>https://limeetpet.com/detail/ja-JP/421/17971518</loc>
+		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/detail/ja-JP/421/17971518"/>
+	</url>
 </urlset>

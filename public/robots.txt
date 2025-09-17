@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Sitemap: https://www.limeetpet.com/sitemap.xml
+Allow: /
+
+# Host
+Host: https://limeetpet.com
+
+# Sitemaps
+Sitemap: https://limeetpet.com/sitemap.xml
