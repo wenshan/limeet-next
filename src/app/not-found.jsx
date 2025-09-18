@@ -16,7 +16,7 @@ export default function NotFoundPage() {
       setCountdown(prev => {
         if (prev <= 1) {
           clearInterval(timer);
-          // swindow.location.href = '/'
+          window.location.href = '/'
           return 0;
         }
         return prev - 1;
