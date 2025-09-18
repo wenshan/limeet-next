@@ -16,9 +16,10 @@ import './index.less';
 
 export async function generateMetadata({ params }) {
   const { id, productId, lang } = await params;
+  const normLang = normalizeLangCode(lang);
   const projectId = 1747727677;
-  const language = lang;
-  if (id && productId && lang) {
+  const language = normLang;
+  if (id && productId && normLang) {
     const result = await productDetailServer({ id, product_id: productId, projectId, language });
     if (result && result.status === 200 && result.data) {
       return {
@@ -55,14 +56,14 @@ const getProductDetailFetchServer = async ({ id, productId, lang }) => {
 
 async function DetailPage({ params }) {
   const { id, productId, lang } = await params;
-  if (!(productId && lang && id)) {
+  const normLang = normalizeLangCode(lang);
+  if (!(productId && normLang && id)) {
     return false;
   }
-  const productDetail = await getProductDetailFetchServer({ id, productId, lang });
+  const productDetail = await getProductDetailFetchServer({ id, productId, lang: normLang });
   if (!productDetail || (productDetail && !productDetail.saleSkusList)) {
     return false;
   }
-  const normLang = normalizeLangCode(lang);
   return (
     <>
       <LocalStorageClient lang={normLang} productDetail={productDetail}></LocalStorageClient>
