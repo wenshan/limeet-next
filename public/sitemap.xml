@@ -52,7 +52,7 @@
 		<xhtml:link rel="alternate" hreflang="x-default" href="https://limeetpet.com/productList/ja-JP/all"/>
 	</url>
 	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/33381771</loc>
+		<loc>https://limeetpet.com/productList/ja-JP/33381771</loc>
 		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -61,7 +61,7 @@
 		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/33381771"/>
 	</url>
 	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/12771663</loc>
+		<loc>https://limeetpet.com/productList/ja-JP/12771663</loc>
 		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -70,7 +70,7 @@
 		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/12771663"/>
 	</url>
 	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/97974047</loc>
+		<loc>https://limeetpet.com/productList/ja-JP/97974047</loc>
 		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -79,7 +79,7 @@
 		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/97974047"/>
 	</url>
 	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/18885882</loc>
+		<loc>https://limeetpet.com/productList/ja-JP/18885882</loc>
 		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -88,7 +88,7 @@
 		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/18885882"/>
 	</url>
 	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/54155552</loc>
+		<loc>https://limeetpet.com/productList/ja-JP/54155552</loc>
 		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
@@ -97,22 +97,13 @@
 		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/54155552"/>
 	</url>
 	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/4804577</loc>
+		<loc>https://limeetpet.com/productList/ja-JP/4804577</loc>
 		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/4804577"/>
 		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/4804577"/>
 		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/4804577"/>
-	</url>
-	<url>
-		<loc>https://limeetpet.com/productList/ja_JP/57722311</loc>
-		<lastmod>2025-09-17T08:28:26.358Z</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-		<xhtml:link rel="alternate" hreflang="zh-CN" href="https://limeetpet.com/productList/zh-CN/57722311"/>
-		<xhtml:link rel="alternate" hreflang="en-US" href="https://limeetpet.com/productList/en-US/57722311"/>
-		<xhtml:link rel="alternate" hreflang="ja-JP" href="https://limeetpet.com/productList/ja-JP/57722311"/>
 	</url>
 	<url>
 		<loc>https://limeetpet.com/detail/en-US/1/22227170</loc>

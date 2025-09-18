@@ -1,6 +1,5 @@
 import { initI18nServer, default as i18n } from '@/locales/i18n_server';
 import { Container, Image } from 'react-bootstrap';
-import initMenuServer from '@/constant/menuNavServer';
 import Footer from "@/components/Footer";
 import ICP from '@/components/Icp';
 import normalizeLangCode from '@/utils/langUtils';

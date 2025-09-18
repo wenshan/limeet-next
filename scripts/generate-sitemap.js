@@ -68,7 +68,7 @@ async function generateSitemap() {
   if (dataCategoriesAll && dataCategoriesAll[0]) {
     for (l = 0; l < dataCategoriesAll.length; l ++) {
       if (dataCategoriesAll[l]) {
-      const lang = dataCategoriesAll[l].ja_JP && 'ja_JP' || dataCategoriesAll[l].en_US && 'en_US' || dataCategoriesAll[l].zh_CN && 'zh_CN';
+      const lang = dataCategoriesAll[l].ja_JP && 'ja-JP' || dataCategoriesAll[l].en_US && 'en-US' || dataCategoriesAll[l].zh_CN && 'zh-CN';
       const data = {url: `/productList/${lang}/${dataCategoriesAll[l].key}`, changefreq: 'weekly', priority: 0.6, lastmod, links: []};
         for (let item in dataCategoriesAll[l]) {
           if (item && dataCategoriesAll[l][item] && langArr.includes(item) && dataCategoriesAll[l].key) {

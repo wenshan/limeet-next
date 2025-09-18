@@ -20,7 +20,6 @@ export async function generateMetadata({ params }) {
   const language = lang;
   if (id && productId && lang) {
     const result = await productDetailServer({ id, product_id: productId, projectId, language });
-    console.log('result13:', result);
     if (result && result.status === 200 && result.data) {
       return {
         title: result.data.title,
