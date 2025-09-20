@@ -127,7 +127,7 @@ async function DetailSwiperServer({ productDetail }) {
                   {currentProductDetail.discount > 0 && (<span className='original-value'>-{currentProductDetail.discount}%</span>)}
                 </div>
                 <div className='title'>
-                  {currentProductDetail.title} {(currentProductDetail.saleValue && productDetail.saleSkusList.length > 1) && (<span className='sale-value'>（{currentProductDetail.saleValue}）</span>)}
+                  <h1>{currentProductDetail.title}</h1> {(currentProductDetail.saleValue && productDetail.saleSkusList.length > 1) && (<span className='sale-value'>（{currentProductDetail.saleValue}）</span>)}
                 </div>
               </div>
               <div className="thumbnails-container">

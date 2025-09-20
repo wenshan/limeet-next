@@ -10,10 +10,9 @@ const getProductListFetchServer = async ({ lang, c_key }) => {
     pageSize: 100,
     total: 0
   };
-  const projectId = 1747727677;
   const language = lang || 'ja-JP';
   const product_type_id = c_key;
-  const result = await queryProductListServer({ projectId, ...pagination, product_type_id, language });
+  const result = await queryProductListServer({ ...pagination, product_type_id, language });
   if (result && result.status === 200 && result.data && result.data.rows) {
     return result.data.rows;
   } else {

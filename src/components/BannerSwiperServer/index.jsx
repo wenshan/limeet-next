@@ -10,10 +10,9 @@ const whereParamsBanner = {
 };
 
 const getBannerFetchServer = async ({ lang }) => {
-  const projectId = 1747727677;
   const language = lang;
   try {
-    const result = await getBannerServer({ projectId, ...whereParamsBanner, language });
+    const result = await getBannerServer({ ...whereParamsBanner, language });
     if (result && result.status == 200 && result.data && result.data && result.data.rows) {
       return result.data.rows;
     } else {

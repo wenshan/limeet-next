@@ -17,10 +17,9 @@ import './index.less';
 export async function generateMetadata({ params }) {
   const { id, productId, lang } = await params;
   const normLang = normalizeLangCode(lang);
-  const projectId = 1747727677;
   const language = normLang;
   if (id && productId && normLang) {
-    const result = await productDetailServer({ id, product_id: productId, projectId, language });
+    const result = await productDetailServer({ id, product_id: productId, language });
     if (result && result.status === 200 && result.data) {
       return {
         title: result.data.title,
@@ -35,11 +34,10 @@ export async function generateMetadata({ params }) {
 };
 
 const getProductDetailFetchServer = async ({ id, productId, lang }) => {
-  const projectId = 1747727677;
   const language = lang;
   try {
     if (id && productId && lang) {
-      const result = await productDetailServer({ id, product_id: productId, projectId, language });
+      const result = await productDetailServer({ id, product_id: productId, language });
       if (result && result.status === 200 && result.data) {
         return result.data;
       } else {

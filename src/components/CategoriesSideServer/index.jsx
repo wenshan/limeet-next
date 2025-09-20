@@ -7,9 +7,8 @@ import allCategoriesInit from '@/constant/allCategoriesInit';
 import './index.less';
 
 const getCategoriesFetchServer = async ({ lang }) => {
-  const projectId = 1747727677;
   const language = lang || 'ja-JP';
-  const result = await queryProductCategoriesServer({ projectId, language });
+  const result = await queryProductCategoriesServer({ language });
   if (result && result.status && result.status === 200 && result.data.rows && result.data.rows[0]) {
     const allCategories = Object.assign({}, allCategoriesInit[language]);
     result.data.rows.push(allCategories);

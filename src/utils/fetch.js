@@ -8,9 +8,11 @@
 import { notFound } from 'next/navigation';
 
 export async function fetchData(url, { config = {}, ...options } = {}) {
+  // 默认常量
+  const projectId = process.env.PROJECT_ID || 1747727677;
   // 默认配置
   const defaultConfig = {
-    baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || '',
+    baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || 'https://api.limeetpet.com/',
     cache: 'force-cache',
     revalidate: 60,
     server: true,
@@ -154,6 +156,22 @@ export async function fetchData(url, { config = {}, ...options } = {}) {
     // 5. 合并localStorage数据到请求中
     let requestBody = options.body;
     const method = (options.method || 'GET').toUpperCase();
+    // 添加一个 项目 projectId 参数
+    console.log('===========projectId===============:', projectId);
+    if (projectId) {
+      try {
+        const objectBody = requestBody 
+            ? typeof requestBody === 'string' 
+              ? JSON.parse(requestBody)
+              : { ...requestBody }
+            : {};
+
+        requestBody = JSON.stringify(Object.assign({}, objectBody, { projectId } ));
+        console.log('===========requestBody===============:', requestBody);
+      } catch (err) {
+        debugLog('项目 projectId 参数失败', err);
+      }
+    }
 
     if (!server && mergeConfig.enabled && 
         Object.keys(localStorageData).length > 0 && 

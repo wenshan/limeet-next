@@ -34,7 +34,7 @@ async function About({ params }) {
             </p>
           </div>
           <div className='company clearfix'>
-            <h1>Shanghai Erka International Trade Co., Ltd</h1>
+            <h2>Shanghai Erka International Trade Co., Ltd</h2>
             <ul>
               <li><span>{i18n.t("footer.product.factory.address")}</span>2nd Floor, 1270 Luofen Road, Baoshan District, Shanghai, China</li>
               <li><span>Email:</span><a href="mailto:hou_ve@qq.com">hou_ve@qq.com</a></li>

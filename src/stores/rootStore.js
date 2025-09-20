@@ -36,7 +36,7 @@ const whereParamsBanner = {
 
 // const lang = (languageI18next[lng] && languageI18next[lng].value) || 'en-US';
 const RootStore = create(persist((set, get)=>({
-  projectId: 1747727677,
+  projectId: process.env.PROJECT_ID || 1747727677,
   language: 'ja-JP',
   categories: [],
   product_type_id: 'all',

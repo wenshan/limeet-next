@@ -11,7 +11,7 @@ function ProductDetail({ productDetail }) {
     lifestyle_image_link &&
       lifestyle_image_link.length &&
       lifestyle_image_link.map((item, idx) => {
-        html.push(<Image src={item} fluid key={idx} />);
+        html.push(<Image src={item} fluid key={idx} alt={productDetail.title} />);
       });
     return html;
   };
